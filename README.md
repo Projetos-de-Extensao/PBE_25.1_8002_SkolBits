@@ -1,21 +1,17 @@
-# TemplateBackEnd
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto). !!** 
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: 2024.1_PFE1_ProjetoPandora!!**
- 
- (Apague essa seção)
-
 # NomedoProjeto
 
-**Número do Grupo**: XX<br>
+**Número do Grupo**: Grupo III<br>
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| Fabrício de Brito  |  202402628933 |
+| Lucas  |  xxxx xxxx xxxxx |
+| Paco Guimarães  |  202402879669
+ |
+| Yago Duarte  |  202402185314 |
+| Yuri Durra  |  202407282563 |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
