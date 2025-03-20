@@ -5,7 +5,7 @@ Este documento apresenta os principais conjuntos de dados levantados pelo IBGE a
 
 ---
 
-## 1️⃣ Identificação do Domicílio
+##  1 Identificação do Domicílio
 - Localização (UF, Município, Distrito, Setor, Quadra, Face)
 - Tipo de domicílio (particular permanente, improvisado, coletivo)
 - Tipo de edificação (casa, apartamento, cortiço, maloca, etc.)
