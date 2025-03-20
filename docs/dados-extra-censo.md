@@ -4,7 +4,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 🏠 Condições de Moradia e Sustentabilidade
+## Condições de Moradia e Sustentabilidade
 - **Estado de conservação do imóvel** *(bom, regular, ruim, risco estrutural?)*  
 - **Área útil por pessoa** *(superlotação, espaços adequados?)*  
 - **Uso de tecnologias sustentáveis** *(energia solar, reaproveitamento de água, compostagem?)*  
@@ -13,7 +13,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 💰 Situação Financeira e Consumo
+## Situação Financeira e Consumo
 - **Dívidas e endividamento familiar** *(parcelamentos, empréstimos, cartões de crédito?)*  
 - **Capacidade de poupança e investimentos** *(conseguem guardar dinheiro ou vivem no limite?)*  
 - **Gastos com transporte, alimentação e lazer** *(qual percentual da renda é comprometido?)*  
@@ -22,7 +22,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 💼 Trabalho e Qualidade de Vida Profissional
+## Trabalho e Qualidade de Vida Profissional
 - **Satisfação profissional e bem-estar no trabalho** *(se sente valorizado? Tem sobrecarga?)*  
 - **Horas de trabalho semanais x tempo livre** *(conciliação entre vida pessoal e profissional?)*  
 - **Perspectiva de crescimento na carreira** *(há chances de promoção? O setor está em crise?)*  
@@ -31,7 +31,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 📖 Educação e Aprendizado Contínuo
+## Educação e Aprendizado Contínuo
 - **Acesso a cursos extracurriculares** *(idiomas, informática, capacitações?)*  
 - **Dificuldade no aprendizado** *(dislexia, TDAH, necessidade de reforço escolar?)*  
 - **Autodidatismo e aprendizado online** *(usa YouTube, cursos online, podcasts para aprender?)*  
@@ -40,7 +40,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 🏥 Saúde e Bem-estar
+## Saúde e Bem-estar
 - **Qualidade do sono** *(dorme bem? Tem insônia?)*  
 - **Impacto do estresse e ansiedade** *(trabalho, estudo, relações pessoais?)*  
 - **Prática de atividade física** *(com que frequência? Em academia, ao ar livre?)*  
@@ -49,7 +49,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 📡 Tecnologia e Digitalização
+## Tecnologia e Digitalização
 - **Uso de redes sociais e impacto na saúde mental** *(tempo de tela excessivo? Comparação social?)*  
 - **Exposição a golpes e fraudes online** *(já foi vítima de phishing, clonagem, vazamento de dados?)*  
 - **Consumo de notícias e desinformação** *(sabe identificar fake news? Verifica fontes?)*  
@@ -58,7 +58,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 🚗 Mobilidade e Transporte
+## Mobilidade e Transporte
 - **Qualidade do transporte público** *(é eficiente, acessível e seguro?)*  
 - **Deslocamento diário e tempo perdido no trânsito** *(quanto tempo gasta por dia?)*  
 - **Uso de transportes alternativos** *(bicicleta, patinete elétrico, carona solidária?)*  
@@ -67,7 +67,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 🎭 Cultura, Lazer e Participação Social
+## Cultura, Lazer e Participação Social
 - **Frequência em eventos culturais** *(cinema, teatro, museus, shows?)*  
 - **Engajamento comunitário e ativismo** *(participa de associações, movimentos sociais?)*  
 - **Hobbies e atividades criativas** *(toca instrumentos, desenha, cozinha por prazer?)*  
@@ -76,7 +76,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 🌍 Sustentabilidade e Consciência Ambiental
+## Sustentabilidade e Consciência Ambiental
 - **Preocupação com mudanças climáticas** *(acha que isso afeta sua vida? Faz algo para reduzir impacto?)*  
 - **Hábitos de reciclagem** *(separa lixo? Usa compostagem?)*  
 - **Uso consciente de recursos** *(tenta economizar água, energia, evitar desperdício?)*  
@@ -85,7 +85,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 
 ---
 
-## 🚨 Segurança e Qualidade de Vida Urbana
+## Segurança e Qualidade de Vida Urbana
 - **Percepção da criminalidade no bairro** *(assaltos, furtos, violência policial?)*  
 - **Condições das vias públicas** *(ruas esburacadas, falta de sinalização?)*  
 - **Iluminação pública e sensação de segurança** *(ruas bem iluminadas? Prefere evitar sair à noite?)*  
