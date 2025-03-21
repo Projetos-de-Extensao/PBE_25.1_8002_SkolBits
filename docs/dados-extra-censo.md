@@ -7,8 +7,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 ## Condições de Moradia e Sustentabilidade
 - **Estado de conservação do imóvel** *(bom, regular, ruim, risco estrutural?)*  
 - **Área útil por pessoa** *(superlotação, espaços adequados?)*  
-- **Uso de tecnologias sustentáveis** *(energia solar, reaproveitamento de água, compostagem?)*  
-- **Histórico de mudanças frequentes de residência** *(estabilidade habitacional ou vulnerabilidade?)*  
+- **Uso de tecnologias sustentáveis** *(energia solar, reaproveitamento de água, compostagem?)*    
 - **Presença de vegetação no entorno do domicílio** *(há áreas verdes, quintais, praças?)*  
 
 ---
@@ -17,15 +16,13 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 - **Dívidas e endividamento familiar** *(parcelamentos, empréstimos, cartões de crédito?)*  
 - **Capacidade de poupança e investimentos** *(conseguem guardar dinheiro ou vivem no limite?)*  
 - **Gastos com transporte, alimentação e lazer** *(qual percentual da renda é comprometido?)*  
-- **Acesso a crédito e financiamentos** *(dificuldade de obtenção de crédito?)*  
-- **Impacto da inflação no dia a dia** *(mudança de hábitos por alta de preços?)*  
+- **Acesso a crédito e financiamentos** *(dificuldade de obtenção de crédito?)*   
 
 ---
 
 ## Trabalho e Qualidade de Vida Profissional
 - **Satisfação profissional e bem-estar no trabalho** *(se sente valorizado? Tem sobrecarga?)*  
-- **Horas de trabalho semanais x tempo livre** *(conciliação entre vida pessoal e profissional?)*  
-- **Perspectiva de crescimento na carreira** *(há chances de promoção? O setor está em crise?)*  
+- **Horas de trabalho semanais x tempo livre** *(conciliação entre vida pessoal e profissional?)*   
 - **Uso de tecnologia no trabalho** *(home office, automação, inteligência artificial?)*  
 - **Desemprego de longo prazo** *(há pessoas que desistiram de procurar trabalho?)*  
 
@@ -59,7 +56,7 @@ Além dos dados coletados pelo IBGE no Censo, existem vários outros que poderia
 ---
 
 ## Mobilidade e Transporte
-- **Qualidade do transporte público** *(é eficiente, acessível e seguro?)*  
+- **Qualidade do transporte público** *(é eficiente, acessível e seguro?, tem barco 24h? por ser uma ilha)*  
 - **Deslocamento diário e tempo perdido no trânsito** *(quanto tempo gasta por dia?)*  
 - **Uso de transportes alternativos** *(bicicleta, patinete elétrico, carona solidária?)*  
 - **Custos com transporte** *(gasta muito com gasolina, passagens?)*  
