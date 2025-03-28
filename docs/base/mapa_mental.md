@@ -15,7 +15,7 @@ Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases
 Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta Canvas.
 </p>
 
-### Mapa mental
+## Mapa mental
  
 [Mapa mental Brainstorm](../base/mapa_mental_ilhaprimeira.png)
  
