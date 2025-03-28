@@ -12,19 +12,10 @@ Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases
 ## Metodologia
  
 <p align = "justify">
-Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta Canvas
+Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta Canvas.
 </p>
- 
-## Mapa mental - Geral.
- 
-## Versão 1.0
- 
-### Mapa mental 1
- 
-[Mapa mental Entrevista](../assets/Mapas_mentais/....png)](../assets/Mapas_mentais/...png)
- 
- 
-### Mapa mental Brainstorm
+
+### Mapa mental
  
 [Mapa mental Brainstorm](../base/mapa_mental_ilhaprimeira.png)
  
@@ -35,11 +26,8 @@ O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, 
 </p>
  
 ## Referências
-> Mapa Mental Brainstorme,  Disponível em: [Link](https://www.canva.com/design/DAGi-e0L_2M/K5TL28EoK73wPOhle8FAZg/edit?utm_content=DAGi-e0L_2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
- 
-> Ferramentas para Mapas Mentais. Disponível em: https://www....
- 
-> Plataforma para usuários colaborar no desenho... Disponível em: https://...
+> Mapa Mental,  Disponível em: [Link](https://www.canva.com/design/DAGi-e0L_2M/K5TL28EoK73wPOhle8FAZg/edit?utm_content=DAGi-e0L_2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
  
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
