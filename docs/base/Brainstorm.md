@@ -15,7 +15,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto entre os dias 22/0
  
 ## Brainstorm
  
- [Brainstorm](../base/Brainstorm.jp)
+ [Brainstorm](../base/Brainstorm.png)
  
 # Relatório de Brainstorm sobre Sistema de Cadastro de Moradores e Domicílios
 
