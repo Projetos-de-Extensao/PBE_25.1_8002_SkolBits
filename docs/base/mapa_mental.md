@@ -24,9 +24,9 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
 [![Mapa mental Entrevista](../assets/Mapas_mentais/....png)](../assets/Mapas_mentais/...png)
  
  
-### Mapa mental 2
+### Mapa mental Brainstorm
  
-[![Mapa mental Brainstorm](../assets/Mapas_mentais/...png)](assets/Mapas_mentais/....png)
+[![Mapa mental Brainstorm](https://www.canva.com/design/DAGi-e0L_2M/K5TL28EoK73wPOhle8FAZg/edit?utm_content=DAGi-e0L_2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
  
 ## Conclusão
  
