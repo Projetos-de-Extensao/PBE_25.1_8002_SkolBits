@@ -15,7 +15,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto entre os dias 22/0
  
 ## Brainstorm
  
- [Brainstorm](../base/Brainstorm.jpg)
+ [Brainstorm](../base/Brainstorm.jp)
  
 # Relatório de Brainstorm sobre Sistema de Cadastro de Moradores e Domicílios
 
@@ -111,9 +111,9 @@ Através da aplicação da técnica, foi possível elicitar alguns dos primeiros
 </p>
 
 ## Link para o Brainstorm
-<p align = "justify">
+
 [Link](https://miro.com/app/board/uXjVIKUlWyc=/?share_link_id=976526253846)
-<p>
+
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
