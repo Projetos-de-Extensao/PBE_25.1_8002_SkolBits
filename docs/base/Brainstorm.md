@@ -10,12 +10,11 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .... e terminou..., onde o XXXX XXXX foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+A equipe se reuniu para debater ideias gerais sobre o projeto entre os dias 22/03 e 27/03, em várias sessões de brainstorming. O moderador, Fabricio de Brito, conduziu as discussões com perguntas preparadas, incentivando todo mundo a compartilhar suas ideias de forma aberta. Durante esse período, a equipe discutiu os principais pontos e definiu os primeiros passos para o desenvolvimento do projeto, com todas as respostas sendo registradas e organizadas no documento para facilitar as decisões futuras.
 </p>
  
 ## Brainstorm
  
-## Versão 1.0
  
 # Relatório de Brainstorm sobre Sistema de Cadastro de Moradores e Domicílios
 
@@ -109,12 +108,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <p align = "justify">
 Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
 </p>
-## Referências Bibliográficas
- 
-> BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
- 
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+| 27/03/2024 | 1.0 | Criação do documento | Fabricio de Brito, Lucas Kronemberger, Paco Guimaraes, Yago Duarte, Yuri Durra |
