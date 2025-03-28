@@ -10,120 +10,106 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .... e terminou..., onde o XXXX XXXX foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+A equipe se reuniu para debater ideias gerais sobre o projeto entre os dias 22/03 e 27/03, em várias sessões de brainstorming. O moderador, Fabricio de Brito, conduziu as discussões com perguntas preparadas, incentivando todo mundo a compartilhar suas ideias de forma aberta. Durante esse período, a equipe discutiu os principais pontos e definiu os primeiros passos para o desenvolvimento do projeto, com todas as respostas sendo registradas e organizadas no documento para facilitar as decisões futuras.
 </p>
  
 ## Brainstorm
  
-## Versão 1.0
  
-## Perguntas
- 
-### 1. Qual o objetivo principal da aplicação?
- 
-<p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
-</p>
- 
-<b>ZZZ</b> - A plataforma deve fornece...
- 
-<b>YYYY</b> - O objetivo da aplicação é....
- 
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
-<b>KKKK</b> - A plataforma deve gerenciar...
-</p>
- 
----
- 
-### 2. Como será o processo para cadastrar um novo clientetorneio?
- 
-<p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
+# Relatório de Brainstorm sobre Sistema de Cadastro de Moradores e Domicílios
 
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
- 
+## Participantes
+
+1. **Fabricio de Brito**
+2. **Lucas Kronemberger**
+3. **Paco Guimaraes**
+4. **Yago Duarte**
+5. **Yuri Durra**
+
 ---
- 
-### 3. Como será a forma de adicionar produtos?
- 
-<p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
-</p>
- 
-<p align = "justify">
-<b>YYYYY</b> - O produto tem...
-</p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
+
+## Estrutura do Banco de Dados
+- Definir quais tabelas serão utilizadas no banco de dados.
+- Cada usuário deve possuir um ID único para identificação.
+- Separar os dados de moradores e domicílios em tabelas distintas.
+- Criar relacionamentos entre tabelas para evitar duplicação de informações.
+- Escolher entre SQL ou NoSQL conforme a necessidade do projeto.
+- Adicionar timestamps para rastrear a inserção e modificação dos dados.
+- Criar índices em colunas frequentemente pesquisadas para melhorar o desempenho.
+
+---
+
+## Cadastro e Autenticação
+- Definir o processo de login no sistema.
+- Implementar níveis de acesso (admin, entrevistador, usuário comum).
+- Utilizar tokens JWT para autenticação segura.
+- Avaliar a necessidade de confirmação por e-mail no cadastro.
+- Aplicar criptografia para proteger senhas e dados sensíveis.
+- Considerar a implementação de login social (Google, Facebook, etc.).
+- Oferecer autenticação multifator (MFA) para administradores.
+
+---
+
+## Rotas e API
+- Criar rota para cadastrar um novo morador/domicílio.
+- Criar rota para editar dados de um morador/domicílio.
+- Criar rota para listar todos os moradores cadastrados.
+- Criar rota para excluir um cadastro, caso necessário.
+- Definir se as rotas serão públicas ou protegidas por autenticação.
+- Padronizar os endpoints da API para facilitar integração.
+- Implementar paginação na listagem de moradores para evitar sobrecarga no banco.
+- Considerar o uso de GraphQL, caso seja necessária flexibilidade nas consultas.
+
+---
+
+## Regras de Negócio
+- Impedir cadastros duplicados no sistema.
+- Validar campos obrigatórios antes de salvar no banco.
+- Garantir que os usuários só possam visualizar dados conforme seu nível de permissão.
+- Definir limites de caracteres para campos como nome e endereço.
+- Implementar logs de auditoria para registrar alterações nos dados.
+- Criar um sistema de recuperação de senha seguro.
+- Avaliar a necessidade de um sistema de denúncias ou feedback dentro do app.
+
+---
+
+## Segurança e Performance
+- Evitar exposição de informações sensíveis nas respostas da API.
+- Configurar CORS para controlar quais domínios podem acessar a API.
+- Definir limites de requisição para evitar sobrecarga e ataques DDoS.
+- Realizar testes de performance para garantir estabilidade da API sob alta demanda.
+- Configurar um backup automático para evitar perda de dados.
+- Armazenar dados de forma criptografada e segura.
+- Implementar monitoramento ativo para identificar picos anormais de acesso.
 
  
----
- 
-### 4. Outras perguntas pertinentes ao contexto
+# Requisitos Elicitados
 
-<p align = "justify">
-<b>XXXX</b> - Com a localização...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
- 
----
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
-</p>
- 
-### 6. Quais informações seriam interessante para o cliente?
-<p align = "justify">
-   <b>XXX</b> - Informações...
-   
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
+| ID  | Descrição                                                                                                                                   |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------------|
+| BS01 | O sistema deve utilizar um banco de dados com tabelas separadas para moradores e domicílios, criando relacionamentos entre elas.            |
+| BS02 | Cada usuário deve ter um ID único para garantir identificação dentro do sistema.                                                            |
+| BS03 | O sistema deve ser capaz de autenticar usuários com tokens JWT para garantir sessões seguras.                                                |
+| BS04 | O sistema deve permitir diferentes níveis de acesso: admin, entrevistador e usuário comum.                                                  |
+| BS05 | O cadastro de usuário deve exigir uma confirmação de e-mail para validar o endereço eletrônico fornecido.                                   |
+| BS06 | O sistema deve garantir a criptografia de senhas para aumentar a segurança dos dados dos usuários.                                           |
+| BS07 | O sistema deve impedir cadastros duplicados e garantir que os dados do usuário sejam exclusivos.                                             |
+| BS08 | As rotas da API devem ser protegidas por autenticação para garantir que apenas usuários autorizados acessem informações sensíveis.         |
+| BS09 | O sistema deve permitir a exclusão de cadastros de moradores e domicílios, com permissão adequada para cada nível de acesso.                |
+| BS10 | O sistema deve validar campos obrigatórios antes de salvar qualquer informação no banco de dados.                                           |
+| BS11 | O sistema deve implementar um sistema de recuperação de senha seguro para usuários que esquecerem suas credenciais.                          |
+| BS12 | O sistema deve permitir o uso de login social (Google, Facebook, etc.) como uma alternativa ao cadastro tradicional.                        |
+| BS13 | O sistema deve permitir a auditoria de alterações realizadas nas informações de moradores e domicílios, mantendo logs para rastreamento.      |
+| BS14 | O sistema deve implementar paginação nas rotas de listagem de moradores e domicílios para evitar sobrecarga no banco de dados.                |
+| BS15 | O sistema deve ter um processo de backup automático para evitar a perda de dados em caso de falhas no sistema.                               |
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
-   
-</p>
- 
-### Requisitos elicitados
- 
-|ID|Descrição|
-|----|-------------|
-|BS01| O cliente...|
-|BS02| O cliente...|
-|BS03| O cliente...|
-|BS04| O cliente...|
-|BS05| O cliente...|
-|BS06| O cliente...|
-|BS07| O cliente...|
-|BS08| O cliente...|
-|BS09| O cliente...|
-|BS10| O produto...|
-|BS11| O produto...|
-|BS12| O produto...|
-|BS13| O produto...|
-|BS14| O produto...|
-|BS15| O produto...|
  
 ## Conclusão
 <p align = "justify">
 Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
 </p>
-## Referências Bibliográficas
- 
-> BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
- 
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+| 27/03/2024 | 1.0 | Criação do documento | Fabricio de Brito, Lucas Kronemberger, Paco Guimaraes, Yago Duarte, Yuri Durra |
