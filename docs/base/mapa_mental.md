@@ -17,7 +17,7 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
 
 ## Mapa mental
  
-[Mapa mental Brainstorm](../base/mapa_mental_ilhaprimeira.png)
+![Mapa mental Brainstorm](../base/mapa_mental_ilhaprimeira.png)
  
 ## Conclusão
  
