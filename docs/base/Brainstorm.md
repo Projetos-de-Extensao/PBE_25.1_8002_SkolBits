@@ -84,25 +84,26 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 - Implementar monitoramento ativo para identificar picos anormais de acesso.
 
  
-### Requisitos elicitados
- 
-|ID|Descrição|
-|----|-------------|
-|BS01| O cliente...|
-|BS02| O cliente...|
-|BS03| O cliente...|
-|BS04| O cliente...|
-|BS05| O cliente...|
-|BS06| O cliente...|
-|BS07| O cliente...|
-|BS08| O cliente...|
-|BS09| O cliente...|
-|BS10| O produto...|
-|BS11| O produto...|
-|BS12| O produto...|
-|BS13| O produto...|
-|BS14| O produto...|
-|BS15| O produto...|
+# Requisitos Elicitados
+
+| ID  | Descrição                                                                                                                                   |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------------|
+| BS01 | O sistema deve utilizar um banco de dados com tabelas separadas para moradores e domicílios, criando relacionamentos entre elas.            |
+| BS02 | Cada usuário deve ter um ID único para garantir identificação dentro do sistema.                                                            |
+| BS03 | O sistema deve ser capaz de autenticar usuários com tokens JWT para garantir sessões seguras.                                                |
+| BS04 | O sistema deve permitir diferentes níveis de acesso: admin, entrevistador e usuário comum.                                                  |
+| BS05 | O cadastro de usuário deve exigir uma confirmação de e-mail para validar o endereço eletrônico fornecido.                                   |
+| BS06 | O sistema deve garantir a criptografia de senhas para aumentar a segurança dos dados dos usuários.                                           |
+| BS07 | O sistema deve impedir cadastros duplicados e garantir que os dados do usuário sejam exclusivos.                                             |
+| BS08 | As rotas da API devem ser protegidas por autenticação para garantir que apenas usuários autorizados acessem informações sensíveis.         |
+| BS09 | O sistema deve permitir a exclusão de cadastros de moradores e domicílios, com permissão adequada para cada nível de acesso.                |
+| BS10 | O sistema deve validar campos obrigatórios antes de salvar qualquer informação no banco de dados.                                           |
+| BS11 | O sistema deve implementar um sistema de recuperação de senha seguro para usuários que esquecerem suas credenciais.                          |
+| BS12 | O sistema deve permitir o uso de login social (Google, Facebook, etc.) como uma alternativa ao cadastro tradicional.                        |
+| BS13 | O sistema deve permitir a auditoria de alterações realizadas nas informações de moradores e domicílios, mantendo logs para rastreamento.      |
+| BS14 | O sistema deve implementar paginação nas rotas de listagem de moradores e domicílios para evitar sobrecarga no banco de dados.                |
+| BS15 | O sistema deve ter um processo de backup automático para evitar a perda de dados em caso de falhas no sistema.                               |
+
  
 ## Conclusão
 <p align = "justify">
