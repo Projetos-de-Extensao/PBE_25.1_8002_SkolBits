@@ -17,82 +17,72 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ## Versão 1.0
  
-## Perguntas
- 
-### 1. Qual o objetivo principal da aplicação?
- 
-<p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
-</p>
- 
-<b>ZZZ</b> - A plataforma deve fornece...
- 
-<b>YYYY</b> - O objetivo da aplicação é....
- 
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
-<b>KKKK</b> - A plataforma deve gerenciar...
-</p>
- 
----
- 
-### 2. Como será o processo para cadastrar um novo clientetorneio?
- 
-<p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
+# Relatório de Brainstorm sobre Sistema de Cadastro de Moradores e Domicílios
 
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
- 
----
- 
-### 3. Como será a forma de adicionar produtos?
- 
-<p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
-</p>
- 
-<p align = "justify">
-<b>YYYYY</b> - O produto tem...
-</p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
+## Participantes
 
- 
----
- 
-### 4. Outras perguntas pertinentes ao contexto
+1. **Fabricio de Brito**
+2. **Lucas Kronemberger**
+3. **Paco Guimaraes**
+4. **Yago Duarte**
+5. **Yuri Durra**
 
-<p align = "justify">
-<b>XXXX</b> - Com a localização...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
- 
 ---
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
-</p>
- 
-### 6. Quais informações seriam interessante para o cliente?
-<p align = "justify">
-   <b>XXX</b> - Informações...
-   
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
-   
-</p>
+## Estrutura do Banco de Dados
+- Definir quais tabelas serão utilizadas no banco de dados.
+- Cada usuário deve possuir um ID único para identificação.
+- Separar os dados de moradores e domicílios em tabelas distintas.
+- Criar relacionamentos entre tabelas para evitar duplicação de informações.
+- Escolher entre SQL ou NoSQL conforme a necessidade do projeto.
+- Adicionar timestamps para rastrear a inserção e modificação dos dados.
+- Criar índices em colunas frequentemente pesquisadas para melhorar o desempenho.
+
+---
+
+## Cadastro e Autenticação
+- Definir o processo de login no sistema.
+- Implementar níveis de acesso (admin, entrevistador, usuário comum).
+- Utilizar tokens JWT para autenticação segura.
+- Avaliar a necessidade de confirmação por e-mail no cadastro.
+- Aplicar criptografia para proteger senhas e dados sensíveis.
+- Considerar a implementação de login social (Google, Facebook, etc.).
+- Oferecer autenticação multifator (MFA) para administradores.
+
+---
+
+## Rotas e API
+- Criar rota para cadastrar um novo morador/domicílio.
+- Criar rota para editar dados de um morador/domicílio.
+- Criar rota para listar todos os moradores cadastrados.
+- Criar rota para excluir um cadastro, caso necessário.
+- Definir se as rotas serão públicas ou protegidas por autenticação.
+- Padronizar os endpoints da API para facilitar integração.
+- Implementar paginação na listagem de moradores para evitar sobrecarga no banco.
+- Considerar o uso de GraphQL, caso seja necessária flexibilidade nas consultas.
+
+---
+
+## Regras de Negócio
+- Impedir cadastros duplicados no sistema.
+- Validar campos obrigatórios antes de salvar no banco.
+- Garantir que os usuários só possam visualizar dados conforme seu nível de permissão.
+- Definir limites de caracteres para campos como nome e endereço.
+- Implementar logs de auditoria para registrar alterações nos dados.
+- Criar um sistema de recuperação de senha seguro.
+- Avaliar a necessidade de um sistema de denúncias ou feedback dentro do app.
+
+---
+
+## Segurança e Performance
+- Evitar exposição de informações sensíveis nas respostas da API.
+- Configurar CORS para controlar quais domínios podem acessar a API.
+- Definir limites de requisição para evitar sobrecarga e ataques DDoS.
+- Realizar testes de performance para garantir estabilidade da API sob alta demanda.
+- Configurar um backup automático para evitar perda de dados.
+- Armazenar dados de forma criptografada e segura.
+- Implementar monitoramento ativo para identificar picos anormais de acesso.
+
  
 ### Requisitos elicitados
  
