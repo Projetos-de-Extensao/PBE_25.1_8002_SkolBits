@@ -108,6 +108,11 @@ A equipe se reuniu para debater ideias gerais sobre o projeto entre os dias 22/0
 <p align = "justify">
 Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
 </p>
+
+## Link para o Brainstorm
+<p align = "justify">
+https://miro.com/welcomeonboard/UE5CSXhGQlM4aFZPSVdhVUpBZ2REL1VhS1lIa1Fjc1BYSlJERGJJYXJweUdEcitTb29wZ0w5cnM4Zk94c2xvZTUyanZwdFM2NUM4MkFMRVRyT1RDbXlxNEVsZDV4S0lIeCtmNThtSFkrcC9QTzBObHJmWUx5Q0pCWS9ZNndhRHZBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=564339708872
+<p>
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |

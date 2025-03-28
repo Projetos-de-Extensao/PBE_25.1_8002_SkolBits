@@ -23,11 +23,10 @@ Para a criação da primeira versão do diagrama de classes, Yago Duarte ficou r
 
 ### Versão 1.0
 
-
-
-![![Diagrama de Classes](../assets/diagrama_de_classes/diagrama_de_classes.png)](../assets/diagrama_de_classes/diagrama_de_classes.png)
+![![Diagrama de Classes](../assets/diagrama_de_classes/diagrama_de_classes.png)](./Diagrama-UML-PBE-SkolBits.jpg)
 
 ### Versão 1.1
+
 ![![Diagrama de Classes](../assets/diagrama_de_classes/diagrama_de_classes_1.1.png)](../assets/diagrama_de_classes/diagrama_de_classes_1.1.png)
 
 
@@ -55,15 +54,8 @@ Através do diagrama de classes, foi possível representar a estrutura do sistem
 
 > UML Class and Object Diagrams Overview. Disponível em https://www.uml-diagrams.org/class-diagrams-overview.html. Acesso em 21/09/20
 
-> UML Class Diagram Tutorial. Disponível em https://www.youtube.com/watch?v=UI6lqHOVHic. Acesso em 21/09/20
-
-> UML Class Relationship Diagrams. Disponível em https://www.cs.odu.edu/~zeil/cs330/latest/Public/classDiagrams/index.html#other-class-diagram-elements Acesso em 19/10/20
-
 ## Autor(es)
 
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| 21/09/20 | 1.0 | Criação do documento | João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan |
-| 28/09/20 | 1.1 | Ajustes no documento | João Pedro e Renan Cristyan |
-| 28/09/20 | 1.2 | Adicionado diagrama de classes 1.1 | João Pedro e Renan Cristyan |
-| 26/10/20 | 2.0 | Adicionado diagrama de classes 2.0 | João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan |
+| 27/03/2025 | 1.0 | Criação do documento | Yago Duarte |
