@@ -1,6 +1,6 @@
 # Bem-vindo ao MkDocs do SkolBits!
 
-Mais informações no [repositório do grupo](https://projetos-de-extensao.github.io/PBE_25.1_8002_SkolBits/).
+Mais informações no [repositório do grupo](https://github.com/Projetos-de-Extensao/PBE_25.1_8002_SkolBits).
 
 # SkolBits
 
