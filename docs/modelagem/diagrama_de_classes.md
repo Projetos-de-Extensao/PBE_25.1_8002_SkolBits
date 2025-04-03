@@ -25,13 +25,11 @@ Para a criação da primeira versão do diagrama de classes, Yago Duarte ficou r
 
 ![![Diagrama de Classes](../assets/diagrama_de_classes/diagrama_de_classes.png)](./Diagrama-UML-PBE-SkolBits.jpg)
 
-### Versão 1.1
-
-![![Diagrama de Classes](../assets/diagrama_de_classes/diagrama_de_classes_1.1.png)](../assets/diagrama_de_classes/diagrama_de_classes_1.1.png)
-
 ### Versão 2.0
 
-![![Diagrama de Classes](../assets/diagrama_de_classes/diagrama_de_classes_1.1.png)](../assets/diagrama_de_classes/diagrama_de_classes_2.0.png)
+![![Diagrama de Classes](../modelagem/diagramaClassesUml.png)](../modelagem/diagramaClassesUml.png)
+
+
 
 
 #### Rastreabilidade de Requisitos
