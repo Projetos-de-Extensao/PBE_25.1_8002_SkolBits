@@ -1,12 +1,16 @@
-# Welcome to MkDocs
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-## Commands
-* `mkdocs new [dir-name]` - Create a new project.
- * `mkdocs serve` - Start the live-reloading docs server.
- * `mkdocs build` - Build the documentation site.
- * `mkdocs -h` - Print help message and exit.
-## Project layout
-    mkdocs.yml    # The configuration file.
-     docs/
-         index.md  # The documentation homepage.
-         ...       # Other markdown pages, images and other files
+# Bem-vindo ao MkDocs do SkolBits!
+
+Mais informações no [repositório do grupo](https://projetos-de-extensao.github.io/PBE_25.1_8002_SkolBits/).
+
+# SkolBits
+
+**Número do Grupo**: Grupo III<br>
+
+## Alunos
+|Matrícula | Aluno |
+| -- | -- |
+| Fabrício de Brito  |  202402628933 |
+| Lucas Kronemberger  |  202407106773 |
+| Paco Guimarães  |  202402879669 |
+| Yago Duarte  |  202402185314 |
+| Yuri Durra  |  202407282563 |
