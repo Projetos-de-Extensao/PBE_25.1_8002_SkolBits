@@ -1,1 +1,14 @@
 site_name: PBE_25.1_8002_III
+
+theme:
+  name: mkdocs
+  palette:
+    primary: blue
+    
+  locale: pt_BR
+  language: pt-BR
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+  user_color_mode_toggle: true
