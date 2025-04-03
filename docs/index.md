@@ -1,17 +1,33 @@
-# Welcome to MkDocs
+# SkolBits
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+**Número do Grupo**: Grupo III<br>
 
-## Commands
+## Alunos
+|Matrícula | Aluno |
+| -- | -- |
+| Fabrício de Brito  |  202402628933 |
+| Lucas Kronemberger  |  202407106773 |
+| Paco Guimarães  |  202402879669 |
+| Yago Duarte  |  202402185314 |
+| Yuri Durra  |  202407282563 |
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Sobre 
+Descreva o seu projeto em linhas gerais. 
 
-## Project layout
+## Screenshots
+Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Instalação 
+**Linguagens**: xxxxxx<br>
+**Tecnologias**: xxxxxx<br>
+Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+Insira um manual ou um script para auxiliar ainda mais.
+
+## Uso 
+Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+
+## Vídeo
+Adicione 1 ou mais vídeos com a execução do projeto final.
+
+## Outros 
+Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
