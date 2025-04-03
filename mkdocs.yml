@@ -1,7 +1,7 @@
 site_name: PBE_25.1_8002_III
 
 theme:
-  name: mkdocs
+  name: material
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
