@@ -2,7 +2,7 @@ site_name: PBE_25.1_8002_III
 repo_url: https://github.com/Projetos-de-Extensao/PBE_25.1_8002_SkolBits
 
 theme:
-  name: material
+  name: mkdocs
   palette:
     primary: blue
   color_mode: dark
