@@ -37,7 +37,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
-    path('api/', include('minhaapp.api_urls')),  # URLs da API
+    #path('api/', include('minhaapp.api_urls')),  # URLs da API
     path('api-auth/', include('rest_framework.urls')),  # Login para a API
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
