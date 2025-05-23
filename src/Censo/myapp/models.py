@@ -12,4 +12,5 @@ class indentificacao_domicilio(models.Model):
     nr_quadra = models.CharField(max_length=3)
     nr_da_face = models.CharField(max_length=3)
 
-
+    def __str__(self):
+        return self.uf
