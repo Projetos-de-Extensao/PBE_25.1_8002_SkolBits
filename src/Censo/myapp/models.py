@@ -49,3 +49,41 @@ class IdentificacaoDomicilio(models.Model):
 
     def __str__(self):
         return f"Domicílio em {self.municipio}, UF: {self.uf}"
+
+class InformacoesMoradores (models.Model):
+    quantidade_moradores31_07_2025 = models.CharField(max_length=2)
+    quantidade_criancas_0a9_31_07_2025 = models.CharField(max_length=2)
+
+    nome_morador = models.CharField(max_length=50)
+    sobrenome_morador = models.CharField(max_length=200)
+
+    SEXO_CHOICES = [
+        ('M', 'Masculino'),
+        ('F', 'Feminino'),
+    ]
+    sexo = models.CharField(max_length=1, choices=SEXO_CHOICES, default='M')
+
+    RELACAO_COM_RESPONSAVEL_CHOICES = [
+        ('001', 'Pessoa responsável pelo domicílio'),
+        ('002', 'Conjuge ou companheiro(a) de sexo diferente'),
+        ('003', 'conjuge ou companheiro(a) de mesmo sexo'),
+        ('004', 'Filho(a) do responsável e conjugue'),
+        ('005', 'Filho(a) somente do responsável'),
+        ('006', 'Enteado(a)'),
+        ('007', 'Genro ou nora'),
+        ('008', 'Pai, Mãe, Padrasto ou Madrasta'),
+        ('009', 'Sogro(a)'),
+        ('010', 'Neto(a)'),
+        ('011', 'Bisneto(a)'),
+        ('012', 'Irmão ou irmã'),
+        ('013', 'Avô ou avó'),
+        ('014', 'Outro parente'),
+        ('015', 'Agregado(a)'),
+        ('016', 'Convivente'),
+        ('017', 'Pensionista'),
+        ('018', 'Empregado(a) doméstico(a)'),
+        ('019', 'Parente do(a) empregado(a) doméstico(a)'),
+        ('020', 'Indiviual em domicílio coletivo'),
+    ]
+
+    relacao_com_responsavel = models.CharField(max_length=3, choices=RELACAO_COM_RESPONSAVEL_CHOICES, default='001')
