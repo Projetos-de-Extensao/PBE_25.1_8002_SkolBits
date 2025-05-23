@@ -87,3 +87,6 @@ class InformacoesMoradores (models.Model):
     ]
 
     relacao_com_responsavel = models.CharField(max_length=3, choices=RELACAO_COM_RESPONSAVEL_CHOICES, default='001')
+
+    def __str__(self):
+        return f"{self.nome_morador} {self.sobrenome_morador}, Sexo: {self.sexo}, Relação com responsável: {self.relacao_com_responsavel}"
