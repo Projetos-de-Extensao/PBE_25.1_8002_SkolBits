@@ -4,7 +4,7 @@ from django import forms
 
 
 # Peguntas 1.1
-class indentificacao_domicilio(models.Model):
+class IdentificacaoDomicilio(models.Model):
     uf = models.CharField(max_length=2)
     municipio = models.CharField(max_length=30)
     distrito = models.CharField(max_length=2)
