@@ -29,7 +29,9 @@ Para a criação da primeira versão do diagrama de classes, Yago Duarte ficou r
 
 ![![Diagrama de Classes](../modelagem/diagramaClassesUml.png)](../modelagem/diagramaClassesUml.png)
 
+### Versão 3.0
 
+![![Diagrama de Classes](../modelagem/DiagramaDeClasses_Reduzido.png)](../modelagem/DiagramaDeClasses_Reduzido.png)
 
 
 #### Rastreabilidade de Requisitos
