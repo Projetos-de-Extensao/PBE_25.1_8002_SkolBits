@@ -1,114 +1,15 @@
-@startuml Diagrama De Classes
+@startuml DiagramaDeClasses_Reduzido
 
-enum SexoEnum {
-  MASCULINO
-  FEMININO
-  OUTROS
-}
-
-enum TipoDomicilio {
-  PARTICULAR_PERMANENTE
-  PARTICULAR_IMPROVISADO
-  COLETIVO
-}
-
-enum TipoConstrucao {
-  CASA
-  CASA_DE_VILA
-  HABITACAO_COLETIVA
-  ESTRUTURA_DEGRADADA
-  ASILO
-  HOTEL
-  ALOJAMENTO
-  OUTROS
-}
-
-enum Parentesco {
-  RESPONSAVEL
-  CONJUGE_SEXO_DIFERENTE
-  CONJUGE_MESMO_SEXO
-  FILHO
-  GENRO_NORA
-  PAI_MAE
-  SOGRO
-  NETO
-  ENTEADO
-  IRMAO
-  AVO
-  OUTRO
-  AGREGADO
-  BISNETO
-  PENSIONISTA
-  EMPREGADO_DOMESTICO
-  PARENTE_EMPREGADO_DOMESTICO
-  INDIVIDUAL_COLETIVO
-}
-
-enum FormaMoradia {
-  AINDA_PAGANDO
-  ALUGADO
-  EMPREGADOR
-  FAMILIAR
-  OUTRA
-  JA_PAGO
-}
-
-enum TipoDeficiencia {
-  VISUAL
-  AUDITIVA
-  MOTORA
-  FALA
-  MENTAL
-  OUTROS
-}
-
-enum GrauDificuldade {
-  NAO_TEM
-  ALGUMA
-  MUITA
-  NAO_CONSEGUE
-}
-
-enum CursoAtual {
-  PRE_ESCOLA
-  CRECHE
-  EJA
-  FUNDAMENTAL
-  MEDIO
-  SUPERIOR
-  MESTRADO
-  DOUTORADO
-  NENHUM
-}
-
-enum FaixaRenda {
-  ATE_500
-  ATE_1000
-  ATE_2000
-  ATE_3000
-  ATE_5000
-  ATE_10000
-  ATE_20000
-  ATE_100000
-  MAIS_100000
-}
-
-enum MeioTransporte {
-  A_PE
-  BICICLETA
-  MOTOCICLETA
-  MOTOTAXI
-  AUTOMOVEL
-  TAXI
-  VAN
-  ONIBUS
-  CAMINHAO
-  EMBARCACAO_GRANDE
-  EMBARCACAO_PEQUENA
-  OUTROS
-}
-
-' Classes
+enum SexoEnum
+enum TipoDomicilio
+enum TipoConstrucao
+enum Parentesco
+enum FormaMoradia
+enum TipoDeficiencia
+enum GrauDificuldade
+enum CursoAtual
+enum FaixaRenda
+enum MeioTransporte
 
 class Domicilio {
   numeroCasa: String
@@ -116,16 +17,12 @@ class Domicilio {
   tipo: TipoConstrucao
   especie: TipoDomicilio
   formaMoradia: FormaMoradia
-  temInternet: bool
-  temMaquinaLavar: bool
-  quantosComodos: int
-  quantosDormitorios: int
+  quantComodos: int
+  quantDormitorios: int
   banheirosComChuveiro: int
   banheirosSemChuveiro: int
   abastecimentoAgua: String
   abastecimentoEnergia: String
-  temEnergiaEletrica: bool
-  temConexaoInternet: bool
 }
 
 class Morador {
@@ -135,30 +32,10 @@ class Morador {
   sexo: SexoEnum
   parentesco: Parentesco
   possuiConjuge: bool
-  viveComConjuge: bool
-  nomeConjuge: String
-  tipoUniao: String
-  temRegistroNascimento: bool
-  tipoRegistro: String
-  sabeLerEscrever: bool
-  frequentaEscola: int
   cursoAtual: CursoAtual
-  jaConcluiuSuperior: bool
   deficiencias: List<TipoDeficiencia>
   grausDificuldade: List<GrauDificuldade>
-  diagnosticadoAutismo: bool
-  trabalhouRemunerado: bool
-  quantosTrabalhos: int
-  ocupacao: String
-  atividadeEmpresa: String
-  temCarteiraAssinada: bool
-  empresaTemCNPJ: bool
   faixaRendimento: FaixaRenda
-  trabalhaNaIlha: bool
-  localTrabalho: String
-  retornaParaCasa: bool
-  tempoDeslocamentoHoras: int
-  tempoDeslocamentoMin: int
   meioTransporte: MeioTransporte
 }
 
@@ -168,7 +45,6 @@ class Falecimento {
   sexo: SexoEnum
   idadeAoFalecer: int
   mesAnoFalecimento: String
-  tempoConclusaoProcesso: String
 }
 
 class Religiao {
@@ -186,16 +62,26 @@ class Questionario {
   nomeResponsavel: String
   rua: String
   principaisDemandas: String
-  relacaoIlhas: String
-  perguntasExtras: String
 }
-
-' Relacionamentos
 
 Domicilio "1" -- "0..*" Morador
 Domicilio "1" -- "0..1" Falecimento
 Domicilio "1" -- "1" Religiao
 Domicilio "1" -- "1" Contato
 Domicilio "1" -- "1" Questionario
+
+Domicilio --> TipoConstrucao
+Domicilio --> TipoDomicilio
+Domicilio --> FormaMoradia
+
+Morador --> SexoEnum
+Morador --> Parentesco
+Morador --> CursoAtual
+Morador --> TipoDeficiencia
+Morador --> GrauDificuldade
+Morador --> FaixaRenda
+Morador --> MeioTransporte
+
+Falecimento --> SexoEnum
 
 @enduml
