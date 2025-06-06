@@ -1,11 +1,10 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from myapp.api import ProdutoViewSet, ProdutosBaratosAPIView
+from rest_framework import routers
+from myapp.api import IdentificacaoDomicilioViewSet, InformacoesMoradoresViewSet, CaracteristicasDomicilioViewSet
 
-router = DefaultRouter()
-router.register(r'produtos', ProdutoViewSet, basename='produto')
+router = routers.DefaultRouter()
+router.register(r'Identificação do domicílio', IdentificacaoDomicilioViewSet)
+router.register(r'Inforamações de moradores', InformacoesMoradoresViewSet)
+router.register(r'Características do domicílio', CaracteristicasDomicilioViewSet)
 
-urlpatterns = [
-    path('', include(router.urls)),
-    path('produtos/baratos/', ProdutosBaratosAPIView.as_view(), name='produtos-baratos'),
-]
+
+urlpatterns = router.urls

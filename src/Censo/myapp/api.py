@@ -1,21 +1,14 @@
-from rest_framework import viewsets, generics
-from rest_framework.response import Response
-from rest_framework.decorators import action
-from myapp.models import Produto
-from myapp.serializers import ProdutoSerializer
+from rest_framework import viewsets
+from myapp.models import IdentificacaoDomicilio, InformacoesMoradores, CaracteristicasDomicilio
+from myapp.serializers import IdentificacaoDomicilioSerializer, InformacoesMoradoresSerializer, CaracteristicasDomicilioSerializer
 
-class ProdutoViewSet(viewsets.ModelViewSet):
-    queryset = Produto.objects.all()
-    serializer_class = ProdutoSerializer
+class IdentificacaoDomicilioViewSet(viewsets.ModelViewSet):
+    queryset = IdentificacaoDomicilio.objects.all()
+    serializer_class = IdentificacaoDomicilioSerializer
 
-    @action(detail=False, methods=['get'])
-    def disponiveis(self, request):
-        produtos = Produto.objects.filter(disponivel=True)
-        serializer = self.get_serializer(produtos, many=True)
-        return Response(serializer.data)
-
-class ProdutosBaratosAPIView(generics.ListAPIView):
-    serializer_class = ProdutoSerializer
-
-    def get_queryset(self):
-        return Produto.objects.filter(preco__lt=1000)
+class InformacoesMoradoresViewSet(viewsets.ModelViewSet):
+    queryset = InformacoesMoradores.objects.all()
+    serializer_class = InformacoesMoradoresSerializer
+class CaracteristicasDomicilioViewSet(viewsets.ModelViewSet):
+    queryset = CaracteristicasDomicilio.objects.all()
+    serializer_class = CaracteristicasDomicilioSerializer

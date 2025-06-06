@@ -1,8 +1,17 @@
 from rest_framework import serializers
-from myapp.models import Produto
+from myapp.models import IdentificacaoDomicilio, InformacoesMoradores, CaracteristicasDomicilio
 
-class ProdutoSerializer(serializers.ModelSerializer):
+class IdentificacaoDomicilioSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Produto
-        fields = ['id', 'nome', 'preco', 'descricao', 'disponivel']
-        read_only_fields = ['id']
+        model = IdentificacaoDomicilio
+        fields = '__all__'
+
+class InformacoesMoradoresSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = InformacoesMoradores
+        fields = '__all__'
+
+class CaracteristicasDomicilioSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CaracteristicasDomicilio
+        fields = '__all__'
