@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from myapp.models import IdentificacaoDomicilio, InformacoesMoradores, CaracteristicasDomicilio
+from myapp.models import IdentificacaoDomicilio, InformacoesMoradores, CaracteristicasDomicilio, CaracteristicasAdicionaisMoradores
 
 class IdentificacaoDomicilioSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,4 +14,9 @@ class InformacoesMoradoresSerializer(serializers.ModelSerializer):
 class CaracteristicasDomicilioSerializer(serializers.ModelSerializer):
     class Meta:
         model = CaracteristicasDomicilio
+        fields = '__all__'
+        
+class CaracteristicasAdicionaisMoradoresSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CaracteristicasAdicionaisMoradores
         fields = '__all__'

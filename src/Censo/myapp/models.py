@@ -198,3 +198,32 @@ class CaracteristicasDomicilio(models.Model):
 
     def __str__(self):
         return self.lixo
+    
+
+    
+    #PAGINA 4
+class CaracteristicasAdicionaisMoradores(models.Model):
+    cor_raca_CHOICES = [
+        (1, 'Branca'),
+        (2, 'Preta'),
+        (3, 'Parda'),
+        (4, 'Amarela'),
+        (5, 'Indígena'),
+    ]
+    cor_raca = models.IntegerField(choices=cor_raca_CHOICES, verbose_name="Cor/Raça")
+
+    def __str__(self):
+        return self.cor_raca
+    
+    considera_se_indigena_CHOICES = [
+        (1, 'Sim'),
+        (2, 'Não'),
+    ]
+    considera_se_indigena = models.IntegerField(choices=considera_se_indigena_CHOICES, verbose_name="Considera-se indígena", default=2)
+    def __str__(self):
+        return self.considera_se_indigena
+    
+    etinia_1 = models.CharField(max_length=2, verbose_name="Etinia 1")
+    etinia_2 = models.CharField(max_length=2, verbose_name="Etinia 2", blank=True, null=True)
+
+    
