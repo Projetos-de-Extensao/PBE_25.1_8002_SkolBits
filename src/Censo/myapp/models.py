@@ -81,7 +81,13 @@ class CaracteristicasDomicilio(models.Model):
     quantidade_banheiros = models.CharField(max_length=12, choices=QUANTIDADE_BANHEIROS_CHOICES, verbose_name="Quantidade de banheiros", blank=True, null=True)
     
 
-
+class RegistroCivil(models.Model):
+    REGISTRO_NASCIMENTO_CHOICES = [
+        ('do_cartorio', 'Do cartório'),
+        ('nao_tem', 'Não tem'),
+        ('nao_sabe', 'Não sabe'),
+    ]
+    registro_nascimento = models.CharField(max_length=12, choices=REGISTRO_NASCIMENTO_CHOICES, verbose_name="Registro de nascimento", blank=True, null=True)
 #fim da troca 
 
 # class Domicilio(models.Model):
