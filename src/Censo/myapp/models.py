@@ -98,28 +98,28 @@ class Morador (models.Model):
     data_nascimento = models.DateField(verbose_name="Data de nascimento")
 
     RELACAO_COM_RESPONSAVEL_CHOICES = [
-        ('pessoa_responsavel_pelo_domicilio', 'Pessoa responsável pelo domicilio')
-        ('conjuge_ou_companheiro(a)_de_sexo_diferente', 'Cônjuge ou companheiro(a) de sexo diferente')
-        ('conjuge_ou_companheiro(a)_do_mesmo_sexo', 'Cônjuge ou companheiro(a) do mesmo sexo')
-        ('filho(a)_do_responsavel_e_do_conjuge', 'Filho(a) do responsável e do cônjuge')
-        ('filho(a)_somente_do_responsavel', 'Filho(a) somente do responsável')
-        ('pessoa_responsavel_pelo_domicilio', 'Pessoa responsável pelo domicílio')
-        ('genro_ou_nora', 'Genro ou nora')
-        ('pai_mae_padrasto_ou_madrasta', 'Pai, mãe, padrasto ou madrasta')
-        ('sogro(a)', 'Sogro(a)')
-        ('neto(a)', 'Neto(a)')
-        ('enteado(a)', 'Enteado(a)')
-        ('irmão_ou_irma', 'Irmão ou irmã')
-        ('avô_ou_avo', 'Avô ou avó')
-        ('outroparente', 'Outro parente')
-        ('agregado(a)', 'Agregado(a)')
-        ('bisneto(a)', 'Bisneto(a)')
-        ('pensionista', 'Pensionista')
-        ('empregado(a)_domestico(a)', 'Empregado(a) doméstico(a)')
-        ('parente_do(a)_empregado(a)_domestico(a)', 'Parente do(a) empregado(a) doméstico(a)')
-        ('individual_em_domicilio_coletivo', 'Individual em domicílio coletivo')
+        ('pessoa_responsavel_pelo_domicilio', 'Pessoa responsável pelo domicilio'),
+        ('conjuge_ou_companheiro(a)_de_sexo_diferente', 'Cônjuge ou companheiro(a) de sexo diferente'),
+        ('conjuge_ou_companheiro(a)_do_mesmo_sexo', 'Cônjuge ou companheiro(a) do mesmo sexo'),
+        ('filho(a)_do_responsavel_e_do_conjuge', 'Filho(a) do responsável e do cônjuge'),
+        ('filho(a)_somente_do_responsavel', 'Filho(a) somente do responsável'),
+        ('pessoa_responsavel_pelo_domicilio', 'Pessoa responsável pelo domicílio'),
+        ('genro_ou_nora', 'Genro ou nora'),
+        ('pai_mae_padrasto_ou_madrasta', 'Pai, mãe, padrasto ou madrasta'),
+        ('sogro(a)', 'Sogro(a)'),
+        ('neto(a)', 'Neto(a)'),
+        ('enteado(a)', 'Enteado(a)'),
+        ('irmão_ou_irma', 'Irmão ou irmã'),
+        ('avô_ou_avo', 'Avô ou avó'),
+        ('outroparente', 'Outro parente'),
+        ('agregado(a)', 'Agregado(a)'),
+        ('bisneto(a)', 'Bisneto(a)'),
+        ('pensionista', 'Pensionista'),
+        ('empregado(a)_domestico(a)', 'Empregado(a) doméstico(a)'),
+        ('parente_do(a)_empregado(a)_domestico(a)', 'Parente do(a) empregado(a) doméstico(a)'),
+        ('individual_em_domicilio_coletivo', 'Individual em domicílio coletivo'),
     ]
-    relacao_com_responsavel = models.CharField(max_length=3, choices=RELACAO_COM_RESPONSAVEL_CHOICES, verbose_name="Relação com responsável pelo domicílio")
+    relacao_com_responsavel = models.CharField(max_length=100, choices=RELACAO_COM_RESPONSAVEL_CHOICES, verbose_name="Relação com responsável pelo domicílio")
 
     REGISTRO_DE_NASCIMENTO_CHOICES = [
         ('do_cartorio', 'Do cartório'),
@@ -127,20 +127,20 @@ class Morador (models.Model):
         ('nao_tem', 'Não tem'),
         ('nao_sabe', 'Não sabe'),
     ]
-    registro_de_nascimento = models.CharField(max_length=2, choices=REGISTRO_DE_NASCIMENTO_CHOICES, verbose_name="Tem registro de nascimento?")
+    registro_de_nascimento = models.CharField(max_length=100, choices=REGISTRO_DE_NASCIMENTO_CHOICES, verbose_name="Tem registro de nascimento?")
 
     NUPICIALIDADE_CHOICES = [
         ('possui_conjuge_ou_companheiro(a)', 'Possui conjuge ou companheiro(a)'),
         ('sim', 'Sim'),
         ('nao', 'Não'),
     ]
-    nupicialidade = models.CharField(max_length=2, choices=NUPICIALIDADE_CHOICES, verbose_name="Nupicialidade")
+    nupicialidade = models.CharField(max_length=50, choices=NUPICIALIDADE_CHOICES, verbose_name="Nupicialidade")
 
     VIVEM_COMPANHIA_CHOICES = [
         ('sim', 'Sim'),
         ('nao', 'Não'),
     ]
-    vivem_companhia = models.CharField(max_length=2, choices=VIVEM_COMPANHIA_CHOICES, verbose_name="Vivem com companhia de conjuge ou companheiro(a)?")
+    vivem_companhia = models.CharField(max_length=3, choices=VIVEM_COMPANHIA_CHOICES, verbose_name="Vivem com companhia de conjuge ou companheiro(a)?")
 
     nome_conjuge = models.CharField(max_length=200, verbose_name="Nome do cônjuge", blank=True, null=True)
 
@@ -150,7 +150,7 @@ class Morador (models.Model):
         ('so_casamento_religioso', 'So casamento religioso'),
         ('uniao_consensual', 'União consensual'),
     ]
-    tipo_uniao = models.CharField(max_length=2, choices=TIPO_UNIAO_CHOICES, verbose_name="Tipo de união")
+    tipo_uniao = models.CharField(max_length=50, choices=TIPO_UNIAO_CHOICES, verbose_name="Tipo de união")
 
     TRABALHOU_OU_ESTAGIOU_CHOICES = [
     ("SIM", "Sim"),
@@ -163,11 +163,11 @@ class Morador (models.Model):
     ("dois", "2"),
     ("tres_ou_mais", "3 ou mais"),
     ]
-    numero_de_trabalhos = models.CharField(max_length=3, choices=NUMERO_DE_TRABALHOS_CHOICES, verbose_name="Quantos trabalhos tinha nos últimos meses?")
+    numero_de_trabalhos = models.CharField(max_length=20, choices=NUMERO_DE_TRABALHOS_CHOICES, verbose_name="Quantos trabalhos tinha nos últimos meses?")
     
-    ocupacao_funcao = models.StringField(max_length=400, verbose_name="Qual era a ocupação, cargo ou função que tinha nesse trabalho?")
+    ocupacao_funcao = models.TextField(max_length=400, verbose_name="Qual era a ocupação, cargo ou função que tinha nesse trabalho?")
 
-    atividade_negocio = models.StringField(max_length=400, verbose_name="Qual era a principal atividade do negócio ou empresa em que tinha esse trabalho?")
+    atividade_negocio = models.TextField(max_length=400, verbose_name="Qual era a principal atividade do negócio ou empresa em que tinha esse trabalho?")
     
     CARTEIRA_ASSINADA_CHOICES = [
     ("sim", "Sim"),
