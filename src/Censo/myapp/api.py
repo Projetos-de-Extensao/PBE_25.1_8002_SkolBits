@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from myapp.models import Domicilio, Morador
-from myapp.serializers import DomicilioSerializer, MoradorSerializer
+from myapp.serializers import DomicilioSerializer, MoradorSerializer, IndentificacaoDeDomicilioSerializer, IndentificacaoDeDomicilio
 
 class DomicilioViewSet(viewsets.ModelViewSet):
     queryset = Domicilio.objects.all()
@@ -9,3 +9,7 @@ class DomicilioViewSet(viewsets.ModelViewSet):
 class MoradorViewSet(viewsets.ModelViewSet):
     queryset = Morador.objects.all()
     serializer_class = MoradorSerializer
+
+class IndentificacaoDeDomicilioViewSet(viewsets.ModelViewSet):
+    queryset = IndentificacaoDeDomicilio.objects.all()
+    serializer_class = IndentificacaoDeDomicilioSerializer

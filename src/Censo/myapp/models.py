@@ -1,7 +1,8 @@
 from django.db import models
 
-class Domicilio(models.Model):
-    nr_casa = models.CharField(max_length=4, verbose_name="Número da casa")
+#inicio da troca
+class IndentificacaoDeDomicilio(models.Model):
+
     ENDERECO_CHOICES = [
         ("sol", "R. Marina do Sol"),
         ("frade", "R. Marina do Frade"),
@@ -13,7 +14,8 @@ class Domicilio(models.Model):
         ("estrelas", "R. Marina das Estrelas"),
         ("pontaleste", "R. Marina Ponta Leste"),
     ]
-    endereco = models.CharField(max_length=20, choices=ENDERECO_CHOICES, verbose_name="Endereço", blank=True, null=True)
+    endereco = models.CharField(max_length=20, choices=ENDERECO_CHOICES, verbose_name="Endereço")
+    nr_casa = models.CharField(max_length=4, verbose_name="Número da casa")
 
     ESPECIE_CHOICES = [
         ('DPP', 'Domicílio particular permanente ocupado'),
@@ -21,6 +23,13 @@ class Domicilio(models.Model):
         ('DCM', 'Domicílio coletivo com morador'),
     ]
     especie = models.CharField(max_length=3, choices=ESPECIE_CHOICES, verbose_name="Espécie do domicílio", blank=True, null=True)
+
+
+
+#fim da troca 
+
+class Domicilio(models.Model):
+
 
     TIPO_CHOICES = [
         ('casa', 'Casa'),
