@@ -229,6 +229,24 @@ class TrabalhoErendimento(models.Model):
     ]
     faixa_de_rendimento = models.CharField(max_length=25, choices=FAIXA_DE_RENDIMENTO_CHOICES, verbose_name="Faixa de rendimento", blank=True, null=True)
 
+class Taxa_mortalidade(models.Model):
+    FALECEU_ALGUEM_CHOICES = [
+        ("sim", "Sim"),
+        ("nao", "Não"),
+    ]
+    faleceu_alguem = models.CharField(max_length=3, choices=FALECEU_ALGUEM_CHOICES, verbose_name="Faleceu alguma pessoa que morava com você(s)? (inclusive recém-nascidos e idosos)", blank=True, null=True)
+
+    data_falecimento = models.DateField(verbose_name="Mês e ano de falecimento", blank=True, null=True)
+
+    nome_completo_falecido = models.CharField(max_length=200, verbose_name="Nome completo do falecido", blank=True, null=True)
+    idade_falecido = models.IntegerField(verbose_name="Idade do falecido", blank=True, null=True)
+
+    SEXO_CHOICES = [
+        ("M", "Masculino"),
+        ("F", "Feminino"),
+        ("O", "Outros"),
+    ]
+    sexo_falecido = models.CharField(max_length=1, choices=SEXO_CHOICES, verbose_name="Sexo do falecido", blank=True, null=True)
 #fim da troca 
 
 # class Domicilio(models.Model):
