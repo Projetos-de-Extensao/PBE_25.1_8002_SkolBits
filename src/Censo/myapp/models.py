@@ -185,6 +185,50 @@ class Nupcialidade(models.Model):
         ('uniao_consensual', 'União consensual'),
     ]
     tipo_uniao = models.CharField(max_length=50, choices=TIPO_UNIAO_CHOICES, verbose_name="Tipo de união", blank=True, null=True)
+
+class TrabalhoErendimento(models.Model):
+    TRABALHOU_OU_ESTAGIOU_CHOICES = [
+        ("sim", "Sim"),
+        ("nao", "Não"),
+    ]
+    trabalhou_ou_estagiou = models.CharField(max_length=3, choices=TRABALHOU_OU_ESTAGIOU_CHOICES, verbose_name="Trabalhou ou estagiou em alguma atividade remunerada em dinheiro?", blank=True, null=True)
+
+    NUMERO_DE_TRABALHOS_ULTIMOS_MESES_CHOICES = [
+        ("um", "1"),
+        ("dois", "2"),
+        ("tres_ou_mais", "3 ou mais"),
+    ]
+    numero_de_trabalhos = models.CharField(max_length=20, choices=NUMERO_DE_TRABALHOS_ULTIMOS_MESES_CHOICES, verbose_name="Quantos trabalhos tinha nos últimos meses?", blank=True, null=True)
+    
+    ocupacao_funcao = models.TextField(max_length=400, verbose_name="Qual era a ocupação, cargo ou função que tinha nesse trabalho?", blank=True, null=True)
+
+    atividade_negocio = models.TextField(max_length=400, verbose_name="Qual era a principal atividade do negócio ou empresa em que tinha esse trabalho?", blank=True, null=True)
+    
+    CARTEIRA_ASSINADA_CHOICES = [
+        ("sim", "Sim"),
+        ("nao", "Não"),
+    ]
+    carteira_assinada = models.CharField(max_length=3, choices=CARTEIRA_ASSINADA_CHOICES, verbose_name="Nesse trabalho tinha carteira de trabalho assinada?", blank=True, null=True)
+
+    EMPRESA_COM_CNPJ_CHOICES = [
+        ("sim", "Sim"),
+        ("nao", "Não"),
+    ]
+    empresa_com_cnpj = models.CharField(max_length=3, choices=EMPRESA_COM_CNPJ_CHOICES, verbose_name="Esse negócio ou empresa era registrado no cadastro nacional de pessoa jurídica - cnpj?", blank=True, null=True)
+
+    FAIXA_DE_RENDIMENTO_CHOICES = [
+        ("faixa_1_ate_500", "1 - 1,00 a 500,00"),
+        ("faixa_2_501_a_1000", "2 - 501,00 a 1.000,00"),
+        ("faixa_3_1001_a_2000", "3 - 1.001,00 a 2.000,00"),
+        ("faixa_4_2001_a_3000", "4 - 2.001,00 a 3.000,00"),
+        ("faixa_5_3001_a_5000", "5 - 3.001,00 a 5.000,00"),
+        ("faixa_6_5001_a_10000", "6 - 5.001,00 a 10.000,00"),
+        ("faixa_7_10001_a_20000", "7 - 10.001,00 a 20.000,00"),
+        ("faixa_8_20001_a_100000", "8 - 20.001,00 a 100.000,00"),
+        ("faixa_9_mais_de_100000", "9 - 100.001 ou mais"),
+    ]
+    faixa_de_rendimento = models.CharField(max_length=25, choices=FAIXA_DE_RENDIMENTO_CHOICES, verbose_name="Faixa de rendimento", blank=True, null=True)
+
 #fim da troca 
 
 # class Domicilio(models.Model):
