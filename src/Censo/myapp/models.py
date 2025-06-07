@@ -25,6 +25,18 @@ class IndentificacaoDeDomicilio(models.Model):
     ]
     especie = models.CharField(max_length=3, choices=ESPECIE_CHOICES, verbose_name="Espécie do domicílio", blank=True, null=True)
 
+    TIPO_CHOICES = [
+        ('casa', 'Casa'),
+        ('casa_vila_ou_condominio', 'Casa de vila ou em condomínio'),
+        ('casa_comodos_ou_cortiço', 'Habitação em casa de cômodos ou cortiço'),
+        ('estrututura_degradada_ou_inacabada', 'Estrutura não residencial permanente degradada ou inacabada'),
+        ('asilo', 'Asilo ou outra instrituição de longa permanência'),
+        ("hotel_ou_pensao", 'Hotel ou pensão'),
+        ('alojamento', 'Alojamento'),
+        ('outros', 'Outros'),
+    ]
+    tipo = models.CharField(max_length=50, choices=TIPO_CHOICES, verbose_name="Tipo de domicílio", blank=True, null=True)
+
 class InformacoesMoradores(models.Model):
     QTD_MORADORES_CHOICES = [
         ('um', '1'),
@@ -88,6 +100,30 @@ class RegistroCivil(models.Model):
         ('nao_sabe', 'Não sabe'),
     ]
     registro_nascimento = models.CharField(max_length=12, choices=REGISTRO_NASCIMENTO_CHOICES, verbose_name="Registro de nascimento", blank=True, null=True)
+
+class Nupcialidade(models.Model):
+   
+    POSSUI_CONJUGE_CHOICES = [
+        ('s', 'Sim'),
+        ('n', 'Não'),
+    ]
+    possui_conjuge = models.CharField(max_length=1, choices=POSSUI_CONJUGE_CHOICES, blank=True, null=True)
+
+    VIVE_EM_COMPANHIA_CHOICES= [
+        ('s', 'Sim'),
+        ('n', 'Não'),
+    ]
+    vive_em_companhia = models.CharField(max_length=1, choices=VIVE_EM_COMPANHIA_CHOICES, verbose_name="Vive em companhia de cônjuge ou companheiro(a)?", blank=True, null=True)
+
+    nome_conjuge = models.CharField(max_length=200, verbose_name="Nome do cônjuge", blank=True, null=True)
+
+    TIPO_UNIAO_CHOICES = [
+        ('casamento_civil_e_religioso', 'Casamento civil e religioso'),
+        ('so_casamento_civil', 'So casamento civil'),
+        ('so_casamento_religioso', 'So casamento religioso'),
+        ('uniao_consensual', 'União consensual'),
+    ]
+    tipo_uniao = models.CharField(max_length=50, choices=TIPO_UNIAO_CHOICES, verbose_name="Tipo de união", blank=True, null=True)
 #fim da troca 
 
 # class Domicilio(models.Model):
