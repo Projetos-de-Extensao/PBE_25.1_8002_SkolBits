@@ -51,12 +51,50 @@ class InformacoesMoradores(models.Model):
 
     nome_completo = models.CharField(max_length=50, verbose_name="Nome completo", null=True, blank=True)
 
+    data_nascimento = models.DateField(verbose_name="Data de nascimento", null=True, blank=True)
+
     SEXO_CHOICES = [
         ('M', 'Masculino'),
         ('F', 'Feminino'),
     ]
     sexo = models.CharField(max_length=1, choices=SEXO_CHOICES, verbose_name="Sexo", blank=True, null=True)
     
+    RELACAO_COM_RESPONSAVEL_CHOICES = [
+        ('conjuge_ou_companheiro(a)_de_sexo_diferente', 'Cônjuge ou companheiro(a) de sexo diferente'),
+        ('conjuge_ou_companheiro(a)_do_mesmo_sexo', 'Cônjuge ou companheiro(a) do mesmo sexo'),
+        ('filho(a)_do_responsavel_e_do_conjuge', 'Filho(a) do responsável e do cônjuge'),
+        ('filho(a)_somente_do_responsavel', 'Filho(a) somente do responsável'),
+        ('pessoa_responsavel_pelo_domicilio', 'Pessoa responsável pelo domicílio'),
+        ('genro_ou_nora', 'Genro ou nora'),
+        ('pai_mae_padrasto_ou_madrasta', 'Pai, mãe, padrasto ou madrasta'),
+        ('sogro(a)', 'Sogro(a)'),
+        ('neto(a)', 'Neto(a)'),
+        ('enteado(a)', 'Enteado(a)'),
+        ('irmão_ou_irma', 'Irmão ou irmã'),
+        ('avô_ou_avo', 'Avô ou avó'),
+        ('outroparente', 'Outro parente'),
+        ('agregado(a)', 'Agregado(a)'),
+        ('bisneto(a)', 'Bisneto(a)'),
+        ('pensionista', 'Pensionista'),
+        ('empregado(a)_domestico(a)', 'Empregado(a) doméstico(a)'),
+        ('parente_do(a)_empregado(a)_domestico(a)', 'Parente do(a) empregado(a) doméstico(a)'),
+        ('individual_em_domicilio_coletivo', 'Individual em domicílio coletivo'),
+        ('outros', 'Outros'),
+    ]
+    relacao_com_responsavel = models.CharField(max_length=100, choices=RELACAO_COM_RESPONSAVEL_CHOICES, verbose_name="Relação com responsável pelo domicílio", blank=True, null=True)
+
+    CONDIÇÃO_POSSE_CHOICES = [
+        ('pagando', 'Ainda pagando'),
+        ('alugada', 'Alugada'),
+        ('por_empregador', 'Por empregador'),
+        ('por_familiar', 'Por familiar'),
+        ('outra_forma', 'Outra forma'),
+        ('outra_condicao', 'Outra condição'),
+        ('ja_pago', 'Já pago, herdado ou ganho'),
+    ]
+    condicao_posse = models.CharField(max_length=50, choices=CONDIÇÃO_POSSE_CHOICES, verbose_name="Condição de posse do domicílio", blank=True, null=True)
+
+
 
 class CaracteristicasDomicilio(models.Model):
     QUANTIDADE_COMODOS_CHOICES = [
