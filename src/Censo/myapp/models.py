@@ -45,7 +45,7 @@ class Domicilio(models.Model):
     ]
     condicao_posse = models.CharField(max_length=50, choices=CONDIÇÃO_POSSE_CHOICES, verbose_name="Condição de posse do domicílio")
 
-    ABASTECIMENTO_CHOICES = [
+    ABASTECIMENTO_AGUA_CHOICES = [
         ('rede_geral', 'Rede geral de distribuição'),
         ('poco_artesiano', 'Poço artesiano'),
         ('cacimba', 'Cacimba'),
@@ -55,8 +55,31 @@ class Domicilio(models.Model):
         ('agua_de_chuva', 'água de chuva'),
         ('outro', 'Outro'),
     ]
-    abastecimento = models.CharField(max_length=50, choices=ABASTECIMENTO_CHOICES, verbose_name="Abastecimento de água")
+    abastecimento_agua = models.CharField(max_length=50, choices=ABASTECIMENTO_AGUA_CHOICES, verbose_name="Abastecimento de água")
 
+    DISTRIBUICAO_AGUA_CHOICES = [
+        ('Encanada até dentro da moradia', 'Encanada até dentro da moradia'),
+        ('Encanada, mas apenas terreno ou quintal', 'Encanada, mas apenas terreno ou quintal'),
+        ('Não encanada', 'Não encanada'),
+    ]
+    distribuicao_agua = models.CharField(max_length=50, choices=DISTRIBUICAO_AGUA_CHOICES, verbose_name="Distribuição de água")
+    
+    ABASTECIMENTO_ENERGIA_CHOICES = [
+        ('rede_geral', 'Rede geral de distribuição'),
+        ('gerador', 'Gerador'),
+        ('energia_solar', 'Energia solar'),
+        ('energia_eolica', 'Energia eólica'),
+        ('energia_hidraulica', 'Energia hidráulica'),
+        ('outra_fonte', 'Outra fonte'),
+    ]
+    abastecimento_energia = models.CharField(max_length=50, choices=ABASTECIMENTO_ENERGIA_CHOICES, verbose_name="Abastecimento de energia")
+
+    CHEGA_ENERGIA_INTERNET_CHOICES = [
+        ('sim', 'Sim'),
+        ('nao', 'Não'),
+    ]
+    chega_energia_internet = models.CharField(max_length=3, choices=CHEGA_ENERGIA_INTERNET_CHOICES, verbose_name="Chega energia e internet?")
+    
     ESGOTO_CHOICES = [
         ('Rede geral de esgoto', 'Rede geral de esgoto'),
         ('Fossa séptica', 'Fossa séptica'),
@@ -66,13 +89,6 @@ class Domicilio(models.Model):
         ('Outro', 'Outro'),
     ]
     esgoto = models.CharField(max_length=50, choices=ESGOTO_CHOICES, verbose_name="Esgoto")
-
-    DISTRIBUICAO_AGUA_CHOICES = [
-        ('Encanada até dentro da moradia', 'Encanada até dentro da moradia'),
-        ('Encanada, mas apenas terreno ou quintal', 'Encanada, mas apenas terreno ou quintal'),
-        ('Não encanada', 'Não encanada'),
-    ]
-    distribuicao_agua = models.CharField(max_length=50, choices=DISTRIBUICAO_AGUA_CHOICES, verbose_name="Distribuição de água")
 
     LIXO_CHOICES = [
         ('coletado_prefeitura', 'Coletado pela prefeitura'),
@@ -84,6 +100,10 @@ class Domicilio(models.Model):
         ('outro', 'Outro'),
     ]
     lixo = models.CharField(max_length=50, choices=LIXO_CHOICES, verbose_name="Destinação do lixo")
+
+    quantidade_comodos = models.IntegerField(verbose_name="Quantidade de cômodos", null=True, blank=True)
+    quantidade_dormitorios = models.IntegerField(verbose_name="Quantidade de dormitórios", null=True, blank=True)
+    banheiros = models.IntegerField(verbose_name="Banheiros", null=True, blank=True)
 
 class Morador (models.Model):
     nome = models.CharField(max_length=50, verbose_name="Nome do morador")
