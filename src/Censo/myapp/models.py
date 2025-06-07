@@ -15,6 +15,7 @@ class IndentificacaoDeDomicilio(models.Model):
         ("pontaleste", "R. Marina Ponta Leste"),
     ]
     endereco = models.CharField(max_length=20, choices=ENDERECO_CHOICES, verbose_name="Endereço")
+
     nr_casa = models.CharField(max_length=4, verbose_name="Número da casa")
 
     ESPECIE_CHOICES = [
@@ -24,7 +25,26 @@ class IndentificacaoDeDomicilio(models.Model):
     ]
     especie = models.CharField(max_length=3, choices=ESPECIE_CHOICES, verbose_name="Espécie do domicílio", blank=True, null=True)
 
+class InformacoesMoradores(models.Model):
+    QTD_MORADORES_CHOICES = [
+        ('um', '1'),
+        ('dois', '2'),
+        ('tres', '3'),
+        ('quatro', '4'),
+        ('cinco', '5'),
+        ('seis', '6'),
+        ('sete_ou_mais', '7+'),
+    ]
+    quantidade_moradores = models.CharField(max_length=12, choices=QTD_MORADORES_CHOICES, verbose_name="Quantidade de moradores", blank=True, null=True)
 
+    nome_completo = models.CharField(max_length=50, verbose_name="Nome completo", null=True, blank=True)
+
+    SEXO_CHOICES = [
+        ('M', 'Masculino'),
+        ('F', 'Feminino'),
+    ]
+    sexo = models.CharField(max_length=1, choices=SEXO_CHOICES, verbose_name="Sexo", blank=True, null=True)
+    
 
 #fim da troca 
 
