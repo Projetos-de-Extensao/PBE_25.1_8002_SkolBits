@@ -119,7 +119,7 @@ class CaracteristicasDomicilio(models.Model):
     ]
     quantidade_dormitorios = models.CharField(max_length=12, choices=QUANTIDADE_DORMITORIOS_CHOICES, verbose_name="Quantidade de dormitórios", blank=True, null=True)
 
-    QUANTIDADE_BANHEIROS_CHOICES = [
+    QUANTIDADE_BANHEIROS_COM_CHUVEIRO_CHOICES = [
         ('um', '1'),
         ('dois', '2'),
         ('tres', '3'),
@@ -128,7 +128,30 @@ class CaracteristicasDomicilio(models.Model):
         ('seis', '6'),
         ('sete_ou_mais', '7+'),
     ]
-    quantidade_banheiros = models.CharField(max_length=12, choices=QUANTIDADE_BANHEIROS_CHOICES, verbose_name="Quantidade de banheiros", blank=True, null=True)
+    quantidade_banheiro_com_chuveiro = models.CharField(max_length=12, choices=QUANTIDADE_BANHEIROS_COM_CHUVEIRO_CHOICES, verbose_name="Quantidade de banheiros", blank=True, null=True)
+
+    QUANTIDADE_BANHEIROS_SEM_CHUVEIRO_CHOICES = [
+        ('um', '1'),
+        ('dois', '2'),
+        ('tres', '3'),
+        ('quatro', '4'),
+        ('cinco', '5'),
+        ('seis', '6'),
+        ('sete_ou_mais', '7+'),
+    ]
+    quantidade_banheiro_sem_chuveiro = models.CharField(max_length=12, choices=QUANTIDADE_BANHEIROS_SEM_CHUVEIRO_CHOICES, verbose_name="Quantidade de banheiros", blank=True, null=True)
+
+    TEM__INTERNET_CHOICES = [
+        ('sim', 'Sim'),
+        ('nao', 'Não'),
+    ]
+    tem_internet = models.CharField(max_length=3, choices=TEM__INTERNET_CHOICES, verbose_name="Tem internet?", blank=True, null=True)
+
+    MAQUINA_LAVAR = [  
+        ('sim', 'Sim'),
+        ('nao', 'Não'),
+    ]
+    maquina_lavar = models.CharField(max_length=3, choices=MAQUINA_LAVAR, verbose_name="Tem máquina de lavar?", blank=True, null=True)
     
 
 class RegistroCivil(models.Model):
