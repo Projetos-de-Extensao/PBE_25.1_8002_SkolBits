@@ -247,6 +247,48 @@ class Taxa_mortalidade(models.Model):
         ("O", "Outros"),
     ]
     sexo_falecido = models.CharField(max_length=1, choices=SEXO_CHOICES, verbose_name="Sexo do falecido", blank=True, null=True)
+
+
+class PessoaComDeficiencia(models.Model):
+    DIFICULDADE_ENXERGAR_CHOICES = [
+        ("nao_consegue", "Tem, não consegue de modo algum"),
+        ("muita_dificuldade", "Tem muita dificuldade"),
+        ("alguma_dificuldade", "Tem alguma dificuldade"),
+        ("nao_tem_dificuldade", "Não tem dificuldade"),
+    ]
+    dificuldade_enxergar = models.CharField(
+        max_length=25,
+        choices=DIFICULDADE_ENXERGAR_CHOICES,
+        verbose_name="tem dificuldade permanente para enxergar, mesmo usando óculos ou lentes de contato?",
+        blank=True,
+        null=True
+    )
+    DIFICULDADE_OUVIR_CHOICES = [
+        ("nao_consegue", "Tem, não consegue de modo algum"),
+        ("muita_dificuldade", "Tem muita dificuldade"),
+        ("alguma_dificuldade", "Tem alguma dificuldade"),
+        ("nao_tem_dificuldade", "Não tem dificuldade"),
+    ]
+    dificuldade_ouvir = models.CharField(
+        max_length=25,
+        choices=DIFICULDADE_OUVIR_CHOICES,
+        verbose_name="tem dificuldade permanente para ouvir, mesmo usando aparelho auditivo?",
+        blank=True,
+        null=True
+    )
+    DIFICULDADE_PERMANENTE_ANDAR_CHOICES = [
+        ("nao_consegue", "Tem, não consegue de modo algum"),
+        ("muita_dificuldade", "Tem muita dificuldade"),
+        ("alguma_dificuldade", "Tem alguma dificuldade"),
+        ("nao_tem_dificuldade", "Não tem dificuldade"),
+    ]
+    dificuldade_permanente_andar = models.CharField(
+        max_length=25,
+        choices=DIFICULDADE_PERMANENTE_ANDAR_CHOICES,
+        verbose_name="tem dificuldade permanente para andar ou subir escadas?",
+        blank=True,
+        null=True
+    )
 #fim da troca 
 
 # class Domicilio(models.Model):

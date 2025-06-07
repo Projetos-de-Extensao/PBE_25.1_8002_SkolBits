@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade
-from myapp.serializers import  IndentificacaoDeDomicilioSerializer, IndentificacaoDeDomicilio, InformacoesMoradoresSerializer,  CaracteristicasDomicilioSerializer, RegistroCivilSerializer, NupcialidadeSerializer, TrabalhoErendimentoSerializer, Taxa_mortalidadeSerializer
+from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade, PessoaComDeficiencia
+from myapp.serializers import  IndentificacaoDeDomicilioSerializer, IndentificacaoDeDomicilio, InformacoesMoradoresSerializer,  CaracteristicasDomicilioSerializer, RegistroCivilSerializer, NupcialidadeSerializer, TrabalhoErendimentoSerializer, Taxa_mortalidadeSerializer, pessoaComDeficienciaSerializer
 
 
 class IndentificacaoDeDomicilioViewSet(viewsets.ModelViewSet):
@@ -30,3 +30,6 @@ class TrabalhoErendimentoViewSet(viewsets.ModelViewSet):
 class Taxa_mortalidadeViewSet(viewsets.ModelViewSet):
     queryset = Taxa_mortalidade.objects.all()
     serializer_class = Taxa_mortalidadeSerializer
+class PessoaComDeficienciaViewSet(viewsets.ModelViewSet):
+    queryset = PessoaComDeficiencia.objects.all()
+    serializer_class = pessoaComDeficienciaSerializer
