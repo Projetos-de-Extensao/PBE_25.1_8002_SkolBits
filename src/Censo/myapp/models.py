@@ -326,4 +326,15 @@ class Morador (models.Model):
     ]
     meio_transporte_trabalho = models.CharField(max_length=25, choices=MEIO_TRANSPORTE_TRABALHO_CHOICES, verbose_name="Qual o principal meio de transporte utilizado para chegar ao local de trabalho? (Se utiliza vários meios de transporte, inclusive a pé, indique o que passa mais tempo.)", blank=True, null=True)
 
+    DIAGNOSTICO_AUTISMO_CHOICES = [
+    ("sim", "Sim"),
+    ("nao", "Não"),
+    ]
+    diagnostico_autismo = models.CharField(max_length=3, choices=DIAGNOSTICO_AUTISMO_CHOICES, verbose_name="Já foi diagnosticado(a) com autismo por algum profissional de saúde?", blank=True, null=True)
+
+    nome_contato = models.CharField(max_length=25, verbose_name="Nome do contato", blank=True, null=True)
+    email_contato = models.CharField(max_length=25, verbose_name="E-mail do contato", blank=True, null=True)
+    telefone_contato = models.CharField(max_length=25, verbose_name="Telefone do contato", blank=True, null=True)
+
     religiao_ou_culto = models.CharField(max_length=100, verbose_name="Religião ou culto", blank=True, null=True)
+
