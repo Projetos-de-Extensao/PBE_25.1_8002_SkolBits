@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade, PessoaComDeficiencia, Educacao, DeslocamentoParaTrabalho
-from myapp.serializers import  IndentificacaoDeDomicilioSerializer, IndentificacaoDeDomicilio, InformacoesMoradoresSerializer,  CaracteristicasDomicilioSerializer, RegistroCivilSerializer, NupcialidadeSerializer, TrabalhoErendimentoSerializer, Taxa_mortalidadeSerializer, pessoaComDeficienciaSerializer, EducacaoSerializer, DeslocamentoParaTrabalhoSerializer
+from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade, PessoaComDeficiencia, Educacao, DeslocamentoParaTrabalho, ReligiaoCulto
+from myapp.serializers import  IndentificacaoDeDomicilioSerializer, IndentificacaoDeDomicilio, InformacoesMoradoresSerializer,  CaracteristicasDomicilioSerializer, RegistroCivilSerializer, NupcialidadeSerializer, TrabalhoErendimentoSerializer, Taxa_mortalidadeSerializer, pessoaComDeficienciaSerializer, EducacaoSerializer, DeslocamentoParaTrabalhoSerializer, ReligiaoCultoSerializer
 
 
 class IndentificacaoDeDomicilioViewSet(viewsets.ModelViewSet):
@@ -39,3 +39,6 @@ class EducacaoViewSet(viewsets.ModelViewSet):
 class DeslocamentoParaTrabalhoViewSet(viewsets.ModelViewSet):
     queryset = DeslocamentoParaTrabalho.objects.all()
     serializer_class = DeslocamentoParaTrabalhoSerializer
+class ReligiaoCultoViewSet(viewsets.ModelViewSet):
+    queryset = ReligiaoCulto.objects.all()
+    serializer_class = ReligiaoCultoSerializer

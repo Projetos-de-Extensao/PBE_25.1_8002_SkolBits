@@ -411,6 +411,17 @@ class DeslocamentoParaTrabalho(models.Model):
     ]
     meio_transporte_trabalho = models.CharField(max_length=25, choices=MEIO_TRANSPORTE_TRABALHO_CHOICES, verbose_name="Qual o principal meio de transporte utilizado para chegar ao local de trabalho? (Se utiliza vários meios de transporte, inclusive a pé, indique o que passa mais tempo.)", blank=True, null=True)
 
+class ReligiaoCulto(models.Model):
+    RELIGIAO_CHOICES = [
+        ('cristianismo', 'Cristianismo'),
+        ('Islamismo', 'Islamismo'),
+        ('Hundismo', 'Hinduísmo'),
+        ('Budismo', 'Budismo'),
+        ('Judaísmo', 'Judaísmo'),
+        ('Espiritísmo', 'Espiritismo'),
+        ('outros', 'Outros'),
+    ]
+    religiao = models.CharField(max_length=50, choices=RELIGIAO_CHOICES, verbose_name="Religião ou culto", blank=True, null=True)
     
 
 #fim da troca 

@@ -1,5 +1,5 @@
 from rest_framework import routers
-from myapp.api import IndentificacaoDeDomicilioViewSet, InformacoesMoradoresViewSet, CaracteristicasDomicilioViewSet, TrabalhoErendimentoViewSet, RegistroCivilViewSet, NupcialidadeViewSet, Taxa_mortalidadeViewSet, PessoaComDeficienciaViewSet, EducacaoViewSet, DeslocamentoParaTrabalhoViewSet
+from myapp.api import IndentificacaoDeDomicilioViewSet, InformacoesMoradoresViewSet, CaracteristicasDomicilioViewSet, TrabalhoErendimentoViewSet, RegistroCivilViewSet, NupcialidadeViewSet, Taxa_mortalidadeViewSet, PessoaComDeficienciaViewSet, EducacaoViewSet, DeslocamentoParaTrabalhoViewSet, ReligiaoCultoViewSet
 router = routers.DefaultRouter()
 
 router.register(r'IndentificacaoDomicilio', IndentificacaoDeDomicilioViewSet)  
@@ -12,5 +12,6 @@ router.register(r'TaxaMortalidade', Taxa_mortalidadeViewSet)
 router.register(r'PessoaComDeficiencia', PessoaComDeficienciaViewSet)
 router.register(r'Educacao', EducacaoViewSet)
 router.register(r'DeslocamentoParaTrabalho', DeslocamentoParaTrabalhoViewSet)
+router.register(r'ReligiaoCulto', ReligiaoCultoViewSet)
 
 urlpatterns = router.urls
