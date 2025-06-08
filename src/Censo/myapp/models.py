@@ -1,8 +1,6 @@
 from django.db import models
 
-#inicio da troca
 class IndentificacaoDeDomicilio(models.Model):
-
     ENDERECO_CHOICES = [
         ("sol", "R. Marina do Sol"),
         ("frade", "R. Marina do Frade"),
@@ -94,8 +92,6 @@ class InformacoesMoradores(models.Model):
     ]
     condicao_posse = models.CharField(max_length=50, choices=CONDIÇÃO_POSSE_CHOICES, verbose_name="Condição de posse do domicílio", blank=True, null=True)
 
-
-
 class CaracteristicasDomicilio(models.Model):
     QUANTIDADE_COMODOS_CHOICES = [
         ('um', '1'),
@@ -152,7 +148,6 @@ class CaracteristicasDomicilio(models.Model):
         ('nao', 'Não'),
     ]
     maquina_lavar = models.CharField(max_length=3, choices=MAQUINA_LAVAR, verbose_name="Tem máquina de lavar?", blank=True, null=True)
-    
 
 class RegistroCivil(models.Model):
     REGISTRO_NASCIMENTO_CHOICES = [
@@ -247,7 +242,6 @@ class Taxa_mortalidade(models.Model):
         ("O", "Outros"),
     ]
     sexo_falecido = models.CharField(max_length=1, choices=SEXO_CHOICES, verbose_name="Sexo do falecido", blank=True, null=True)
-
 
 class PessoaComDeficiencia(models.Model):
     DIFICULDADE_ENXERGAR_CHOICES = [
@@ -428,4 +422,3 @@ class Autismo(models.Model):
         ('nao', 'Não'),
     ]
     autismo = models.CharField(max_length=3, choices=AUTISMO_CHOICES, verbose_name="Algum morador tem autismo?", blank=True, null=True)
-
