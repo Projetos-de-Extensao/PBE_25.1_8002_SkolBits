@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade, PessoaComDeficiencia, Educacao, DeslocamentoParaTrabalho, ReligiaoCulto
+from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade, PessoaComDeficiencia, Educacao, DeslocamentoParaTrabalho, ReligiaoCulto, Autismo
 
 
 class IndentificacaoDeDomicilioSerializer(serializers.ModelSerializer):
@@ -49,4 +49,8 @@ class DeslocamentoParaTrabalhoSerializer(serializers.ModelSerializer):
 class ReligiaoCultoSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReligiaoCulto
+        fields = '__all__'
+class AutismoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Autismo
         fields = '__all__'

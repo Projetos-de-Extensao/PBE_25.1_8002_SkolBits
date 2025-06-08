@@ -1,7 +1,6 @@
 from rest_framework import viewsets
-from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade, PessoaComDeficiencia, Educacao, DeslocamentoParaTrabalho, ReligiaoCulto
-from myapp.serializers import  IndentificacaoDeDomicilioSerializer, IndentificacaoDeDomicilio, InformacoesMoradoresSerializer,  CaracteristicasDomicilioSerializer, RegistroCivilSerializer, NupcialidadeSerializer, TrabalhoErendimentoSerializer, Taxa_mortalidadeSerializer, pessoaComDeficienciaSerializer, EducacaoSerializer, DeslocamentoParaTrabalhoSerializer, ReligiaoCultoSerializer
-
+from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade, PessoaComDeficiencia, Educacao, DeslocamentoParaTrabalho, ReligiaoCulto, Autismo
+from myapp.serializers import  IndentificacaoDeDomicilioSerializer, IndentificacaoDeDomicilio, InformacoesMoradoresSerializer,  CaracteristicasDomicilioSerializer, RegistroCivilSerializer, NupcialidadeSerializer, TrabalhoErendimentoSerializer, Taxa_mortalidadeSerializer, pessoaComDeficienciaSerializer, EducacaoSerializer, DeslocamentoParaTrabalhoSerializer, ReligiaoCultoSerializer, AutismoSerializer
 
 class IndentificacaoDeDomicilioViewSet(viewsets.ModelViewSet):
     queryset = IndentificacaoDeDomicilio.objects.all()
@@ -36,9 +35,12 @@ class PessoaComDeficienciaViewSet(viewsets.ModelViewSet):
 class EducacaoViewSet(viewsets.ModelViewSet):
     queryset = Educacao.objects.all()
     serializer_class = EducacaoSerializer  
-class DeslocamentoParaTrabalhoViewSet(viewsets.ModelViewSet):
-    queryset = DeslocamentoParaTrabalho.objects.all()
-    serializer_class = DeslocamentoParaTrabalhoSerializer
-class ReligiaoCultoViewSet(viewsets.ModelViewSet):
+class religiaoCultoViewSet(viewsets.ModelViewSet):
     queryset = ReligiaoCulto.objects.all()
     serializer_class = ReligiaoCultoSerializer
+class DeslocamentoParaTrabalhoViewSet(viewsets.ModelViewSet):
+    queryset = DeslocamentoParaTrabalho.objects.all()
+    serializer_class = DeslocamentoParaTrabalhoSerializer   
+class AutismoViewSet(viewsets.ModelViewSet):
+    queryset = Autismo.objects.all()
+    serializer_class = AutismoSerializer

@@ -422,7 +422,12 @@ class ReligiaoCulto(models.Model):
         ('outros', 'Outros'),
     ]
     religiao = models.CharField(max_length=50, choices=RELIGIAO_CHOICES, verbose_name="Religião ou culto", blank=True, null=True)
-    
+class Autismo(models.Model):
+    AUTISMO_CHOICES = [
+        ('sim', 'Sim'),
+        ('nao', 'Não'),
+    ]
+    autismo = models.CharField(max_length=3, choices=AUTISMO_CHOICES, verbose_name="Algum morador tem autismo?", blank=True, null=True)
 
 #fim da troca 
 
