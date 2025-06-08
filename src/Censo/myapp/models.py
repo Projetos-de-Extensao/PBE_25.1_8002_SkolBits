@@ -350,6 +350,68 @@ class Educacao(models.Model):
         null=True
     )
     
+class DeslocamentoParaTrabalho(models.Model):
+    ALGUM_MORADOR_TRABALHA_CHOICES = [
+        ('sim', 'Sim'),
+        ('nao', 'Não'),
+    ]
+    algum_morador_trabalha = models.CharField(
+        max_length=3,
+        choices=ALGUM_MORADOR_TRABALHA_CHOICES,
+        verbose_name="Algum morador trabalha?",
+        blank=True,
+        null=True
+    )  
+
+    MUNICIPIO_OU_PAIS_TRABALHA = [
+        ('Apenas em casa ou na propriedade/municipio', 'Apenas em casa ou na propriedade/neste municipio'),
+        ('Fora de casa e da propriedade/municipio', 'Fora de casa e da propriedade/neste municipio'),
+        ('Em outro municipio do Brasil', 'Em outro município do Brasil'),
+        ('Em outro pais', 'Em outro pais'),
+        ('Em mais de um municipio ou pais', 'Em mais de um município ou pais'),
+    ]
+    MUNICIPIO_OU_PAIS_TRABALHA = models.CharField(
+        max_length=100,
+        choices=MUNICIPIO_OU_PAIS_TRABALHA,
+        verbose_name="Em que município ou país trabalha?",
+        blank=True,
+        null=True
+    )
+    RETORNA_DO_TRABALHO_PARA_CASA = [
+        ('sim', 'Sim'),
+        ('nao', 'Não'),
+    ]
+    retorna_do_trabaho_pra_casa = models.CharField(
+        max_length=3,
+        choices=RETORNA_DO_TRABALHO_PARA_CASA,
+        verbose_name="Retorna do trabalho para casa?",
+        blank=True,
+        null=True
+    )
+    TEMPO_CASA_TRABALHO_CHOICES = (
+    [(str(horas), f"{horas} hora(s)") for horas in range(0, 25)] +
+    [(str(minutos), f"{minutos} minuto(s)") for minutos in range(0, 60)] +
+    [("nao_desloca", "Não se desloca para um local de trabalho")]
+    )
+    tempo_casa_trabalho = models.CharField(max_length=25, choices=TEMPO_CASA_TRABALHO_CHOICES, verbose_name="Quanto tempo leva entre sua casa e o local de trabalho normalmente?(Considerar o deslocamento casa-trabalho preferencialmente. Caso não seja possível, considerar o deslocamento de retorno (trabalho-casa))", blank=True, null=True)
+
+    MEIO_TRANSPORTE_TRABALHO_CHOICES = [
+        ("a_pe", "A pé"),
+        ("bicicleta", "Bicicleta"),
+        ("motocicleta", "Motocicleta"),
+        ("mototaxi", "Mototáxi"),
+        ("automovel", "Automóvel"),
+        ("taxi", "Táxi ou assemelhados"),
+        ("van", "Van, perua ou assemelhados"),
+        ("onibus", "Ônibus"),
+        ("pau_de_arara", "Caminhonete ou caminhão adaptado (pau de arara)"),
+        ("embarcacao_grande", "Embarcação de médio e grande porte (acima de 20 pessoas)"),
+        ("embarcacao_pequena", "Embarcação de pequeno porte (até 20 pessoas)"),
+        ("outros", "Outros"),
+    ]
+    meio_transporte_trabalho = models.CharField(max_length=25, choices=MEIO_TRANSPORTE_TRABALHO_CHOICES, verbose_name="Qual o principal meio de transporte utilizado para chegar ao local de trabalho? (Se utiliza vários meios de transporte, inclusive a pé, indique o que passa mais tempo.)", blank=True, null=True)
+
+    
 
 #fim da troca 
 
