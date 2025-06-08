@@ -289,6 +289,68 @@ class PessoaComDeficiencia(models.Model):
         blank=True,
         null=True
     )
+
+class Educacao(models.Model):
+    QUANTAS_PESSOAS_LER_ESCRE_CHOICES = [
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+        ('5', '5'),
+        ('6', '6'),
+        ('7_ou_mais', '7 ou mais'),
+    ]
+    quantas_pessoas_ler_escre = models.CharField(
+        max_length=12,
+        choices=QUANTAS_PESSOAS_LER_ESCRE_CHOICES,
+        verbose_name="Quantas pessoas sabem ler e escrever?",
+        blank=True,
+        null=True
+    )
+    FREQUENTA_ESCOLA_CRECHE_CHOICES = [
+        ('sim', 'Sim'),
+        ('nao', 'mas já frequentou'),
+        ('nao', 'Nunca frequentou'),
+    ]
+    frequenta_escola_creche = models.CharField(
+        max_length=3,
+        choices=FREQUENTA_ESCOLA_CRECHE_CHOICES,
+        verbose_name="Algum morador frequenta escola ou creche?",
+        blank=True,
+        null=True
+    )
+    CURSO_ATUAL_CHOICES = [
+        ("pre_escola", "pré-escola"),
+        ("creche", "creche"),
+        ("alfabetizacao_adultos", "Alfabetização de jovens e adultos"),
+        ("ensino_fundamental", "Regular do ensino fundamental"),
+        ("eja_fundamental", "Educação de jovens e adultos (eja) do ensino fundamental"),
+        ("ensino_medio", "Regular do ensino médio"),
+        ("superior_graduacao", "Superior de graduação"),
+        ("eja_medio", "Educação de jovens e adultos (eja) do ensino médio"),
+        ("especializacao", "Especialização de nível superior (duração mínima de 360 horas)"),
+        ("mestrado", "Mestrado"),
+        ("doutorado", "Doutorado"),
+        ("nenhum", "Nenhum"),
+    ]
+    curso_atual = models.CharField(
+        max_length=25,
+          choices=CURSO_ATUAL_CHOICES, 
+          verbose_name="Qual é o curso que frequenta?", blank=True, null=True
+    )      
+    JA_CONCLUIU_CURSO_SUPERIOR_CHOICES = [
+        ('sim', 'Sim'),
+        ('nao', 'Não'),
+    ]
+    ja_concluiu_curso_superior = models.CharField(
+        max_length=3,
+        choices=JA_CONCLUIU_CURSO_SUPERIOR_CHOICES,
+        verbose_name="Já concluiu curso superior?",
+        blank=True,
+        null=True
+    )
+    
+
 #fim da troca 
 
 # class Domicilio(models.Model):
