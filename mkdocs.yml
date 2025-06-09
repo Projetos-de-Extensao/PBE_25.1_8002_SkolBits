@@ -51,11 +51,10 @@ nav:
   - 🔧 Elaboração:
       - 🧩 Diagrama de Classes: modelagem/diagrama_de_classes.md
       - 🔄 Diagrama de Atividades do Sistema: modelagem/das.md
-  -  Construção:
-      -  Interação 1: interacao/interacao1.md
-  -  Transição:
-      -  Template de Documento: util/doc_template.md
-  -  Sobre: docs/README.md
+  - 🏗️ Construção:
+      - 🧪 Interação 1: interacao/interacao1.md
+  - 🚚 Transição:
+      - 📑 Template de Documento: util/doc_template.md
 
 plugins:
   - search

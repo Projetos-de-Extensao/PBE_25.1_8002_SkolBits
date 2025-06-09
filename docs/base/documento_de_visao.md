@@ -2,86 +2,96 @@
 id: documento_de_visao
 title: Documento de Visão
 ---
+
 ## Introdução
 
-<p align = "justify">
-O propósito deste documento é fornecer uma visão geral sobre o projeto que será realizado na disciplina Arquitetura e Desenho de Software 2020/1, na Universidade de Brasília. Sendo assim, Nesse documento serão descritas de maneira resumida as principais funcionalidades, usabilidades, o problema que será abordado e os objetivos da equipe.
+<p align="justify">
+O presente documento tem como objetivo apresentar uma visão geral do projeto desenvolvido para a disciplina de Projeto Back-End, no contexto do Projeto de Extensão PBE_25.1_8002_SkolBits. O sistema consiste em uma aplicação web desenvolvida com Django e Python, com documentação via Swagger, que visa apoiar a comunidade da Ilha Primeira, no Rio de Janeiro, oferecendo um sistema de registro e análise de dados inspirado no modelo de coleta do IBGE.
 </p>
 
-## Descrição do Problema 
+## Descrição do Problema
 
-<p align = "justify">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<p align="justify">
+A Ilha Primeira é uma comunidade que carece de dados organizados sobre seus moradores, condições de moradia, acesso a serviços e necessidades sociais. Essa ausência de informações dificulta a criação de políticas públicas, ações sociais e tomadas de decisão por parte de gestores e apoiadores da região.
 </p>
 
 ### Problema
 
-Dificuldade em gerenciar e organizar...
+A inexistência de um sistema centralizado e acessível para registrar e consultar dados da comunidade da Ilha Primeira.
 
 ### Impactados
 
-Usuários....
+- Moradores da Ilha Primeira  
+- Organizações sociais e comunitárias  
+- Gestores públicos e apoiadores da região  
+- Universidades e grupos de extensão envolvidos com a comunidade  
 
 ### Consequência
 
-A criação de novos....
+A falta de dados estruturados compromete o planejamento de ações sociais, a entrega de recursos e a criação de políticas públicas voltadas às reais necessidades dos moradores.
 
 ### Solução
 
-Utilizar a aplicação que será desenvolvida visando resolver...
+A solução proposta é o desenvolvimento de uma aplicação web moderna que permita a coleta, o armazenamento e a visualização de dados relacionados aos domicílios, moradores e condições de vida na Ilha Primeira. A ferramenta será inspirada na metodologia do Censo do IBGE, mas com foco local e adaptada à realidade da comunidade.
 
 ## Objetivos
 
-<p align = "justify">
-O objetivo da equipe de desenvolvimento é fornecer...
+<p align="justify">
+O principal objetivo do projeto é desenvolver uma plataforma funcional, segura e intuitiva que permita à equipe de campo, moradores e instituições parceiras acessar e registrar dados relevantes sobre a Ilha Primeira. Esses dados serão usados para criar relatórios, identificar demandas e propor soluções com base em evidências.
 </p>
 
-## Descrição do Usuário 
+## Descrição do Usuário
 
-<p align = "justify">
-Os usuários serão....
+<p align="justify">
+Os usuários da plataforma serão os voluntários responsáveis pela coleta de dados, os moradores da Ilha Primeira com acesso permitido, e organizações parceiras. O sistema será acessado via navegador, com interface adaptada para dispositivos móveis, priorizando usabilidade, acessibilidade e segurança.
 </p>
 
-## Recursos do produto
+## Recursos do Produto
 
 ### Conta
 
-<p align = "justify">
-O cliente poderá realizar seu cadastro....
+<p align="justify">
+Usuários autorizados poderão se cadastrar e fazer login para acessar o sistema, com permissões específicas conforme seu papel (coletor, administrador, visualizador).
 </p>
 
-### Loja
+### Cadastro de Domicílio
 
-<p align = "justify">
-O cliente poderá cadastrar uma loja única....
+<p align="justify">
+Permite o registro das informações de domicílios na Ilha Primeira, incluindo localização, estrutura da moradia e acesso a serviços básicos.
 </p>
 
-### Produto
+### Cadastro de Moradores
 
-<p align = "justify">
-O cliente poderá cadastrar....
+<p align="justify">
+Permite o registro dos dados dos residentes, como idade, gênero, escolaridade, ocupação, religião, entre outros aspectos sociais.
 </p>
 
-### Pesquisa sobre Lojas
+### Relatórios e Análises
 
-<p align = "justify">
-O cliente poderá pesquisar...
+<p align="justify">
+A aplicação permitirá gerar relatórios com filtros customizados, como faixa etária, educação ou situação de trabalho, oferecendo apoio à análise local.
+</p>
+
+### Documentação com Swagger
+
+<p align="justify">
+O backend da aplicação é documentado com Swagger, permitindo que desenvolvedores e mantenedores visualizem e testem os endpoints REST de forma prática.
 </p>
 
 ## Restrições
 
-<p align = "justify">
-A aplicação não será responsável...
+<p align="justify">
+A aplicação requer conexão com a internet para sincronização dos dados com o servidor. A coleta de dados será feita por pessoas treinadas e autorizadas. A privacidade dos dados será respeitada, com uso de criptografia e autenticação segura.
 </p>
 
 ## Referências Bibliográficas
 
-> Documento de visão. Disponível em https://www... Acesso em dd/MM/yyYY
-
-> Documento de visão. Disponível em  Acesso em dd/MM/yyYY
+> Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022. Disponível em: https://censo2022.ibge.gov.br/. Acesso em: 09/06/2025  
+> Django Project. Disponível em: https://www.djangoproject.com/  
+> Swagger/OpenAPI Specification. Disponível em: https://swagger.io/specification/  
 
 ## Versionamento
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX e ZZZ ZZZZ | 
 
+| Data       | Versão | Descrição               | Autor(es)                       |
+|------------|--------|--------------------------|----------------------------------|
+| 09/06/2025 | 1.0    | Criação do documento     | Yago Duarte, Equipe SkolBits    |
