@@ -22,6 +22,22 @@ theme:
     - content.code.select
     - content.code.annotate 
 
+nav:
+  - Início: index.md
+  - Inicialização:
+      - 5W2H: base/5w2h.md
+      - Brainstorm: base/Brainstorm.md
+      - Censo IBGE: base/Censo_IBGE.md
+      - Dados extras do Censo: base/dados_extra_censo.md
+      - Documento de visão: base/documento_de_visao.md
+      - Entrevista: base/entrevista.md
+      - Mapa Mental: base/mapa_mental.md
+      - Metodologia: base/metodologia.md
+      - Protótipo de Alta Fidelidade: base/prototipo_alta_fidelidade.md
+  - Elaboração:
+      - Diagrama de Classes: modelagem/diagrama_de_classes.md
+      - Diagrama de Atividades do Sistema: modelagem/das.md
+
 # plugins:
 #   - search
 #   - mkdocs-jupyter:
