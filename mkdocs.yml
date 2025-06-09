@@ -1,70 +1,95 @@
-site_name: PBE_25.1_8002_III
+site_name: PBE_25.1_8002_SkolBits
 repo_url: https://github.com/Projetos-de-Extensao/PBE_25.1_8002_SkolBits
 
 theme:
-  name: mkdocs
-  palette:
-    primary: blue
-  color_mode: dark
+  name: material
   language: pt-BR
-  favicon: images/favicon.png
-  user_color_mode_toggle: true
-  logo: assets/ibmec_logo.png
+  favicon: assets/imagens/logoibmecicon.png
+  logo: assets/imagens/ibmec_logo.png
+  palette:
+    - scheme: slate
+      primary: dark blue
+      accent: deep blue
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+    - scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+  font:
+    text: Roboto
+    code: Fira Code
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.path
-    - navigation.footer
     - navigation.top
-    - navigation.instant
-    - navigation.instant.progress
+    - navigation.sections
+    - navigation.indexes
+    - toc.integrate
     - content.code.copy
-    - content.code.select
-    - content.code.annotate 
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+    - navigation.footer  # Adiciona rodapé funcional
 
 nav:
-  - Início: index.md
-  - Inicialização:
-      - 5W2H: base/5w2h.md
-      - Brainstorm: base/Brainstorm.md
-      - Censo IBGE: base/Censo_IBGE.md
-      - Dados extras do Censo: base/dados_extra_censo.md
-      - Documento de visão: base/documento_de_visao.md
-      - Entrevista: base/entrevista.md
-      - Mapa Mental: base/mapa_mental.md
-      - Metodologia: base/metodologia.md
-      - Protótipo de Alta Fidelidade: base/prototipo_alta_fidelidade.md
-  - Elaboração:
-      - Diagrama de Classes: modelagem/diagrama_de_classes.md
-      - Diagrama de Atividades do Sistema: modelagem/das.md
+  - 🏠 Início: index.md
+  - 🚀 Inicialização:
+      - 📝 5W2H: base/5w2h.md
+      - 💡 Brainstorm: base/Brainstorm.md
+      - 📊 Censo IBGE: base/Censo_IBGE.md
+      - 📎 Dados extras do Censo: base/dados_extra_censo.md
+      - 📄 Documento de visão: base/documento_de_visao.md
+      - 🎙️ Entrevista: base/entrevista.md
+      - 🧠 Mapa Mental: base/mapa_mental.md
+      - 🧪 Metodologia: base/metodologia.md
+      - 🧾 Protótipo de Alta Fidelidade: base/prototipo_alta_fidelidade.md
+  - 🔧 Elaboração:
+      - 🧩 Diagrama de Classes: modelagem/diagrama_de_classes.md
+      - 🔄 Diagrama de Atividades do Sistema: modelagem/das.md
 
-# plugins:
-#   - search
-#   - mkdocs-jupyter:
-#       execute: false
-#       include_requirejs: true
-#       include_source: true
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
+      include_requirejs: true
+      include_source: true
 
 extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Projetos-de-Extensao/PBE_25.1_8002_SkolBits
+      name: GitHub
+    - icon: fontawesome/solid/envelope
+      link: mailto:contato@ibmec.br
+      name: Email
   consent:
     actions:
       - accept
       - manage
+  generator: false
+  copyright:
+    text: © 2025 IBMEC • Projeto de Extensão SkolBits
 
-# markdown_extensions:
-#   - admonition
-#   - pymdownx.details
-#   - pymdownx.highlight:
-#       anchor_linenums: true
-#       line_spans: __span
-#       pygments_lang_class: true
-#   - pymdownx.inlinehilite
-#   - pymdownx.snippets
-#   - attr_list
-#   - md_in_html
-#   - pymdownx.emoji:
-#       emoji_index: !!python/name:material.extensions.emoji.twemoji
-#       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-#   - def_list
-#   - pymdownx.tasklist:
-#       custom_checkbox: true
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - attr_list
+  - md_in_html
