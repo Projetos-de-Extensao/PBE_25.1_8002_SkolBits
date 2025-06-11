@@ -126,7 +126,7 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
  
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| 21/02/20 | 1.0 | Criação do documento | Fabricio de Brito |
-| 07/09/20 | 1.1 | Adicionado imagens do protótipo | Lucas Kronemberger, Yago Duarte  |
-| 07/09/20 | 1.2 | Adicionado conclusão e referências | Lucas Kronemberger, Yago Duarte |
-| 26/10/20 | 2.0 | - - - - - - X - - - - - - | - - - - - - X - - - - - - |
+| 21/02/25 | 1.0 | Criação do documento | Fabricio de Brito |
+| 11/06/25 | 1.1 | Adicionado imagens do protótipo | Lucas Kronemberger, Yago Duarte  |
+| 11/06/25 | 1.2 | Adicionado conclusão e referências | Lucas Kronemberger, Yago Duarte |
+| 00/00/00 | 2.0 | - - - - - - X - - - - - - | - - - - - - X - - - - - - |
