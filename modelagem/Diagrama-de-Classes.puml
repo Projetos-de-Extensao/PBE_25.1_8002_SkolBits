@@ -1,0 +1,87 @@
+@startuml DiagramaDeClasses_Reduzido
+
+enum SexoEnum
+enum TipoDomicilio
+enum TipoConstrucao
+enum Parentesco
+enum FormaMoradia
+enum TipoDeficiencia
+enum GrauDificuldade
+enum CursoAtual
+enum FaixaRenda
+enum MeioTransporte
+
+class Domicilio {
+  numeroCasa: String
+  endereco: String
+  tipo: TipoConstrucao
+  especie: TipoDomicilio
+  formaMoradia: FormaMoradia
+  quantComodos: int
+  quantDormitorios: int
+  banheirosComChuveiro: int
+  banheirosSemChuveiro: int
+  abastecimentoAgua: String
+  abastecimentoEnergia: String
+}
+
+class Morador {
+  nome: String
+  sobrenome: String
+  dataNascimento: Date
+  sexo: SexoEnum
+  parentesco: Parentesco
+  possuiConjuge: bool
+  cursoAtual: CursoAtual
+  deficiencias: List<TipoDeficiencia>
+  grausDificuldade: List<GrauDificuldade>
+  faixaRendimento: FaixaRenda
+  meioTransporte: MeioTransporte
+}
+
+class Falecimento {
+  nome: String
+  sobrenome: String
+  sexo: SexoEnum
+  idadeAoFalecer: int
+  mesAnoFalecimento: String
+}
+
+class Religiao {
+  religiaoOuCulto: String
+}
+
+class Contato {
+  nome: String
+  email: String
+  telefone: String
+}
+
+class Questionario {
+  dataPreenchimento: Date
+  nomeResponsavel: String
+  rua: String
+  principaisDemandas: String
+}
+
+Domicilio "1" -- "0..*" Morador
+Domicilio "1" -- "0..1" Falecimento
+Domicilio "1" -- "1" Religiao
+Domicilio "1" -- "1" Contato
+Domicilio "1" -- "1" Questionario
+
+Domicilio --> TipoConstrucao
+Domicilio --> TipoDomicilio
+Domicilio --> FormaMoradia
+
+Morador --> SexoEnum
+Morador --> Parentesco
+Morador --> CursoAtual
+Morador --> TipoDeficiencia
+Morador --> GrauDificuldade
+Morador --> FaixaRenda
+Morador --> MeioTransporte
+
+Falecimento --> SexoEnum
+
+@enduml
