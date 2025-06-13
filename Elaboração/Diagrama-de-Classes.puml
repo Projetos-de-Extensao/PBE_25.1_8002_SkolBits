@@ -1,87 +1,78 @@
-@startuml DiagramaDeClasses_Reduzido
+@startuml DiagramaDeClasses_Django
 
-enum SexoEnum
-enum TipoDomicilio
-enum TipoConstrucao
-enum Parentesco
-enum FormaMoradia
-enum TipoDeficiencia
-enum GrauDificuldade
-enum CursoAtual
-enum FaixaRenda
-enum MeioTransporte
+enum SexoEnum {
+  M
+  F
+  O
+}
+enum ParentescoEnum
+enum CursoAtualEnum
+enum FaixaRendimentoEnum
+enum MeioTransporteEnum
 
 class Domicilio {
-  numeroCasa: String
+  +id: PK
   endereco: String
-  tipo: TipoConstrucao
-  especie: TipoDomicilio
-  formaMoradia: FormaMoradia
-  quantComodos: int
-  quantDormitorios: int
-  banheirosComChuveiro: int
-  banheirosSemChuveiro: int
-  abastecimentoAgua: String
-  abastecimentoEnergia: String
+  nr_casa: String
+  especie: String
+  tipo: String
+  condicao_posse: String
+  abastecimento_agua: String
+  distribuicao_agua: String
+  abastecimento_energia: String
+  chega_energia_internet: String
+  esgoto: String
+  lixo: String
+  quantidade_comodos: int
+  quantidade_dormitorios: int
+  banheiros: int
 }
 
 class Morador {
-  nome: String
-  sobrenome: String
-  dataNascimento: Date
-  sexo: SexoEnum
-  parentesco: Parentesco
-  possuiConjuge: bool
-  cursoAtual: CursoAtual
-  deficiencias: List<TipoDeficiencia>
-  grausDificuldade: List<GrauDificuldade>
-  faixaRendimento: FaixaRenda
-  meioTransporte: MeioTransporte
-}
-
-class Falecimento {
+  +id: PK
   nome: String
   sobrenome: String
   sexo: SexoEnum
-  idadeAoFalecer: int
-  mesAnoFalecimento: String
+  data_nascimento: Date
+  registro_de_nascimento: String
+  relacao_com_responsavel: ParentescoEnum
+  religiao_ou_culto: String
+  sabe_ler_escrever: String
+  frequenta_escola: String
+  curso_atual: CursoAtualEnum
+  ja_concluiu_curso_superior: String
+  faixa_de_rendimento: FaixaRendimentoEnum
+  diagnostico_autismo: String
+  dificuldade_andar: String
+  dificuldade_enxergar: String
+  trabalhou_ou_estagiou: String
+  numero_de_trabalhos: String
+  ocupacao_funcao: Text
+  atividade_negocio: Text
+  carteira_assinada: String
+  empresa_com_cnpj: String
+  meio_transporte_trabalho: MeioTransporteEnum
+  tempo_casa_trabalho: String
+  onde_trabalha: String
+  estado_trabalho: String
+  municipio_trabalho: String
+  pais_trabalho: String
+  retorna_3x_semana: String
+  nupcialidade: String
+  vive_em_companhia: String
+  nome_conjuge: String
+  tipo_uniao: String
+  faleceu_alguem: String
+  nome_falecido: String
+  sobrenome_falecido: String
+  sexo_falecido: SexoEnum
+  idade_falecido: int
+  data_falecimento: Date
+  nome_contato: String
+  email_contato: String
+  telefone_contato: String
 }
 
-class Religiao {
-  religiaoOuCulto: String
-}
-
-class Contato {
-  nome: String
-  email: String
-  telefone: String
-}
-
-class Questionario {
-  dataPreenchimento: Date
-  nomeResponsavel: String
-  rua: String
-  principaisDemandas: String
-}
-
-Domicilio "1" -- "0..*" Morador
-Domicilio "1" -- "0..1" Falecimento
-Domicilio "1" -- "1" Religiao
-Domicilio "1" -- "1" Contato
-Domicilio "1" -- "1" Questionario
-
-Domicilio --> TipoConstrucao
-Domicilio --> TipoDomicilio
-Domicilio --> FormaMoradia
-
-Morador --> SexoEnum
-Morador --> Parentesco
-Morador --> CursoAtual
-Morador --> TipoDeficiencia
-Morador --> GrauDificuldade
-Morador --> FaixaRenda
-Morador --> MeioTransporte
-
-Falecimento --> SexoEnum
+Domicilio "1" o-- "*" Morador
 
 @enduml
