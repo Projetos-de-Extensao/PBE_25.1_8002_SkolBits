@@ -1,56 +1,14 @@
 from rest_framework import serializers
-from myapp.models import  IndentificacaoDeDomicilio, InformacoesMoradores, CaracteristicasDomicilio, RegistroCivil, Nupcialidade, TrabalhoErendimento, Taxa_mortalidade, PessoaComDeficiencia, Educacao, DeslocamentoParaTrabalho, ReligiaoCulto, Autismo
+from .models import Domicilio, Morador
 
-
-class IndentificacaoDeDomicilioSerializer(serializers.ModelSerializer):
+class MoradorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = IndentificacaoDeDomicilio
-        fields = '__all__'
-
-class InformacoesMoradoresSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = InformacoesMoradores
+        model = Morador
         fields = '__all__'
 
-class CaracteristicasDomicilioSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CaracteristicasDomicilio
-        fields = '__all__'
+class DomicilioSerializer(serializers.ModelSerializer):
+    moradores = MoradorSerializer(many=True, read_only=True)
 
-class RegistroCivilSerializer(serializers.ModelSerializer):
     class Meta:
-        model = RegistroCivil
-        fields = '__all__'
-
-class NupcialidadeSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Nupcialidade
-        fields = '__all__'
-class TrabalhoErendimentoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TrabalhoErendimento
-        fields = '__all__'
-class Taxa_mortalidadeSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Taxa_mortalidade
-        fields = '__all__'
-class pessoaComDeficienciaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = PessoaComDeficiencia
-        fields = '__all__'
-class EducacaoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Educacao
-        fields = '__all__'
-class DeslocamentoParaTrabalhoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = DeslocamentoParaTrabalho
-        fields = '__all__'
-class ReligiaoCultoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = ReligiaoCulto
-        fields = '__all__'
-class AutismoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Autismo
+        model = Domicilio
         fields = '__all__'
