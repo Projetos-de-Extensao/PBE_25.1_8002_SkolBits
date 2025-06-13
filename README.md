@@ -31,18 +31,3 @@ Adicione 1 ou mais vídeos com a execução do projeto final.
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
-
-
-
-
-
-
-
-
-https://github.com/user-attachments/assets/d8833515-eca0-4b8e-822f-9174ce1550d5
-
-
