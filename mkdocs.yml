@@ -39,22 +39,22 @@ theme:
 nav:
   - 🏠 Início: index.md
   - 🚀 Inicialização:
-      - 📝 5W2H: base/5w2h.md
-      - 💡 Brainstorm: base/Brainstorm.md
-      - 📊 Censo IBGE: base/Censo_IBGE.md
-      - 📎 Dados extras do Censo: base/dados_extra_censo.md
-      - 📄 Documento de visão: base/documento_de_visao.md
-      - 🎙️ Entrevista: base/entrevista.md
-      - 🧠 Mapa Mental: base/mapa_mental.md
-      - 🧪 Metodologia: base/metodologia.md
-      - 🧾 Protótipo de Alta Fidelidade: base/prototipo_alta_fidelidade.md
+      - 📝 5W2H: Iniciação/5w2h.md
+      - 💡 Brainstorm: Iniciação/Brainstorm.md
+      - 📊 Censo IBGE: Iniciação/Censo_IBGE.md
+      - 📎 Dados extras do Censo: Iniciação/dados_extra_censo.md
+      - 📄 Documento de visão: Iniciação/documento_de_visao.md
+      - 🎙️ Entrevista: Iniciação/entrevista.md
+      - 🧠 Mapa Mental: Iniciação/mapa_mental.md
+      - 🧪 Metodologia: Iniciação/metodologia.md
+      - 🧾 Protótipo de Alta Fidelidade: Iniciação/prototipo_alta_fidelidade.md
   - 🔧 Elaboração:
-      - 🧩 Diagrama de Classes: modelagem/diagrama_de_classes.md
-      - 🔄 Diagrama de Atividades do Sistema: modelagem/das.md
+      - 🧩 Diagrama de Classes: Elaboração/diagrama_de_classes.md
+      - 🔄 Diagrama de Atividades do Sistema: Elaboração/das.md
   - 🏗️ Construção:
-      - 🧪 Interação 1: interacao/interacao1.md
+      - 🧪 Interação 1: Construção/interacao1.md
   - 🚚 Transição:
-      - 📑 Template de Documento: util/doc_template.md
+      - 📑 Template de Documento: Transição/doc_template.md
 
 plugins:
   - search
