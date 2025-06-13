@@ -5,7 +5,7 @@ theme:
   name: material
   language: pt-BR
   favicon: ../assets/imagens/logoibmecicon.png
-  logo: ../assets/imagens/ibmec_logo.png
+  logo: ../assets/imagens/Ibmec_logo.png
   palette:
     - scheme: slate
       primary: dark blue

@@ -60,7 +60,7 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
 [![Prototipo 12](../assets/Protótipo/pergunta_9.png)](../assets/Protótipo/pergunta_9.png)
  
 ### Formulário Enviado
-[![Prototipo 13](../assets/prototipo/formulario_enviado.png)](../assets/prototipo/formulario_enviado.png)
+[![Prototipo 13](../assets/Protótipo/formulario_enviado.png)](../assets/Protótipo/formulario_enviado.png)
 
 <p align = "justify">
 Protótipo feito pela tuma de Front-end. Link para o <a href="https://www.figma.com/design/cX8mG3fK90aDRvKdE1PcjB/AMIP?node-id=0-1&p=f">Protótipo.</a>
