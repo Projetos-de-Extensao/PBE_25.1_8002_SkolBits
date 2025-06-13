@@ -40,27 +40,27 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
 ### Pergunta 3
 [![Prototipo 6](../assets/Protótipo/pergunta_3.png)](../assets/Protótipo/pergunta_3.png)
  
-### Tela Perfil
-[![Prototipo 7](../assets/prototipo/prototipo_7.png)](../assets/prototipo/prototipo_7.png)
+### Pergunta 4
+[![Prototipo 7](../assets/Protótipo/pergunta_4.png)](../assets/Protótipo/pergunta_4.png)
  
-### Tela Cadastrar torneio 1
-[![Prototipo 8](../assets/prototipo/prototipo_8.png)](../assets/prototipo/prototipo_8.png)
+### Pergunta 5
+[![Prototipo 8](../assets/Protótipo/pergunta_5.png)](../assets/Protótipo/pergunta_5.png)
  
-### Tela Cadastrar torneio 2
+### Pergunta 6
  
-[![Prototipo 9](../assets/prototipo/prototipo_9.png)](../assets/prototipo/prototipo_9.png)
+[![Prototipo 9](../assets/Protótipo/pergunta_6.png)](../assets/Protótipo/pergunta_6.png)
  
-### Tela Cadastrar torneio 3
-[![Prototipo 10](../assets/prototipo/prototipo_10.png)](../assets/prototipo/prototipo_10.png)
+### Pergunta 7
+[![Prototipo 10](../assets/Protótipo/pergunta_7.png)](../assets/Protótipo/pergunta_7.png)
  
-### Tela Cadastrar torneio 4
-[![Prototipo 11](../assets/prototipo/prototipo_11.png)](../assets/prototipo/prototipo_11.png)
+### Pergunta 8
+[![Prototipo 11](../assets/Protótipo/pergunta_8.png)](../assets/Protótipo/pergunta_8.png)
  
-### Tela com meus torneios
-[![Prototipo 12](../assets/prototipo/prototipo_12.png)](../assets/prototipo/prototipo_12.png)
+### Pergunta 9
+[![Prototipo 12](../assets/Protótipo/pergunta_9.png)](../assets/Protótipo/pergunta_9.png)
  
-### Tela de inscrição em torneio
-[![Prototipo 13](../assets/prototipo/prototipo_13.png)](../assets/prototipo/prototipo_13.png)
+### Formulário Enviado
+[![Prototipo 13](../assets/prototipo/formulario_enviado.png)](../assets/prototipo/formulario_enviado.png)
 
 <p align = "justify">
 Protótipo feito pela tuma de Front-end. Link para o <a href="https://www.figma.com/design/cX8mG3fK90aDRvKdE1PcjB/AMIP?node-id=0-1&p=f">Protótipo.</a>
