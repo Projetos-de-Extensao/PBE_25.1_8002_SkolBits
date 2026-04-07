@@ -9,3 +9,6 @@ class DomicilioViewSet(viewsets.ModelViewSet):
 class MoradorViewSet(viewsets.ModelViewSet):
     queryset = Morador.objects.all()
     serializer_class = MoradorSerializer
+
+# Ao invés de escrever manualmente como criar, ler, atualizar e deletar dados, o ModelViewSet.
+# Essa classe gera automaticamente todas as operações CRUD (Create, Read, Update, Delete).
